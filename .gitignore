@@ -1,2 +1,2 @@
-sandbox/*/target/
-sandbox/*/*.lock
+aizu/*/target/*
+aizu/*/*.lock
