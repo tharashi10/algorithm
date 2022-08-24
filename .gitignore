@@ -1,0 +1,2 @@
+aizu-rust/*/target/*
+aizu-rust/*/*.lock
