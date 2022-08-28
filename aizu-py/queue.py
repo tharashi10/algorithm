@@ -1,23 +1,63 @@
 ''':Queue
-CPUの処理サンプル
+CPUの処理サンプルTODO
 '''
-n,t = map(int,input().split())
-list = []
-for i in range(n):
-    a,b = input().split()
-    list.append((a,int(b)))
+class CpuQueue:
+    def __init__(self,head,tail,n,lst):
+        self.head = head
+        self.tail = tail
+        self.n = n
+        self.lst = lst
+        print(head)
+        print(tail)
 
-def isEmpty(head_idx, tail_idx):
-    return head_idx==tail_idx
+    def isEmpty(self):
+        return self.head==self.tail
 
-def isFull(n, head_idx, tail_idx):
-    # 配列が"0 Origin"なので+1
-    return head_idx==(tail_idx+1)%n
+    def isFull(self):
+        # 配列が"0 Origin"なので+1
+        return self.head==(self.tail+1)%self.n
 
-def enqueue(lst, n, head_idx, tail_idx):
-    if isFull(n, head_idx, tail_idx):
-        print("Overflow...")
+    def enqueue(self,x):
+        if self.isFull():
+            print("Overflow...")
+        self.lst[self.tail] = x
+        if self.tail+1 == self.n:
+            self.tail = 0
+        else:
+            self.tail+=1
     
-    if lst
+    def dequeue(self):
+        if self.isEmpty():
+            print("Underflow...")
+        tmp = self.lst[self.head]
+        if self.head+1 == self.n:
+            self.head = 0
+        else:
+            self.head+=1
+        return tmp
 
-print(list)
+def solver():
+    n,t = map(int,input().split())
+    queue = []
+    for i in range(n):
+        a,b = input().split()
+        queue.append([a,int(b)])
+    lst = queue
+    cq = CpuQueue(head=0,tail=n-1,n=n,lst=lst)
+    cnt = 0
+    while(not cq.isEmpty()):
+        if queue[cq.head][1] >100:
+            queue[cq.head][1]-=100
+            #cq.dequeue()
+            #queue[cq.head][1]-=100
+            cq.enqueue(queue[cq.head])
+            print(queue)
+            print("---")
+        else:
+            cq.dequeue()
+        cnt+=1
+    print(cnt)
+    print(queue)
+
+if __name__ == "__main__":
+    solver()
