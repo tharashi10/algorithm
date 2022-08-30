@@ -5,9 +5,10 @@
 --
 print(sys.getrecursionlimit())
 1000
+判定時REとなる
 '''
 import sys
-sys.setrecursionlimit(3*15)
+sys.setrecursionlimit(3**15)
 
 # 構造体
 # p:親, l:左Child, r:右Brother
