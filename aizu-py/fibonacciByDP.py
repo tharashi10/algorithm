@@ -7,7 +7,7 @@ a_n= a_n-1 + a_n-2
 """
 import time
 
-#メモ用意
+#メモリスト用意
 MAX = int(101)
 dp = [-1 for _ in range(MAX)]
 
@@ -28,3 +28,4 @@ print(fibonacci(99))
 print(dp)
 end = time.time()
 print(end-start)
+## n=99とかだと、メモ化なしの再帰だと全然返ってこない(だいぶ遅い)
