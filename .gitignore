@@ -1,2 +1,3 @@
 aizu-rust/*/target/*
 aizu-rust/*/*.lock
+aizu-py/__pycache__
