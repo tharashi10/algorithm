@@ -6,17 +6,28 @@
 (計算量を減らせる)
 '''
 import math
-A = int(input())
+N = int(input())
+A = [int(input()) for _ in range(N)]
+#x = int(input())
 
-def isPrimeNumber(A):
-    max_div = int(math.sqrt(A))
-    cnt = []
-    for i in range(2,max_div+1):
-        if (A%i) == 0:
-            cnt.append(i)
-    if len(cnt) ==0:
-        print(f"its not dividable.")
-    for j in range(len(cnt)):
-        print(f"dividable index is {cnt[j]}.")
+def isPrimeNumber(x):
+    # 数学の知識を使う
+    max_div = int(math.sqrt(x))
+    if x==2:
+        return True
+    elif x<2 or x%2==0:
+        return False
+    
+    i=3
+    while(i<=max_div):
+        if (x%i) == 0:
+            return False
+        i+=2
+    
+    return True
 
-isPrimeNumber(A)
+prime_num_cnt = 0
+for i in range(N):
+    if isPrimeNumber(A[i]):
+        prime_num_cnt+=1
+print(prime_num_cnt)
