@@ -1,3 +1,6 @@
+""":
+隣り合う要素の大小を比較しながら整列させる
+"""
 n = int(input())
 A = list(map(int,input().split()))
 

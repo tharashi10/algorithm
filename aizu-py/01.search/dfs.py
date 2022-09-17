@@ -1,5 +1,5 @@
 '''
-Depth First Search:深さ優先探索
+Depth First Search: 深さ優先探索
 '''
 # Graph.pyから引継ぐ
 def convertAdjList(A, N):

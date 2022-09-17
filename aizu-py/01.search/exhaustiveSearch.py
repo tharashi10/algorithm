@@ -1,3 +1,5 @@
+""":全探索
+"""
 def solve(i,m):
     if m == 0:
         return True
