@@ -8,24 +8,27 @@
 0 1 2 2 3 3 5
 '''
 
-def countingSort(A, B, N):
-    for i in range(N):
-        C[i] = 0
+def countingSort(A, B, N, k):
     for j in range(N):
-        C[A[j]]+=1
-    #累積和をとる
-    for k in range(1,N):
-        C[i] = C[i] + C[i-1]
+        C[A[j+1]]+=1
     
-    for l in reversed(range(0,N)):
-        B[C[A[j]]] = A[j]
-        C[A[j]]=-1
+    #累積和をとる
+    for i in range(1,k+1):
+        C[i] +=C[i-1]
+    #print(C[0:5])
 
-    print(*C)
+    for j in reversed(range(0,N)):
+        B[C[A[j+1]]] = A[j+1]
+        C[A[j+1]]-=1
+
+    print(*B[1:])
 
 if __name__ == "__main__":
     N = int(input())
-    A = list(map(int,input().split()))
-    B = [0 for _ in range(N)]
-    C = [0 for _ in range(N)]
-    countingSort(A,B,N)
+    # Noneを入れてIndexを合わせる
+    # ここハマった
+    A = [None] + list(map(int,input().split()))
+    k = 10000
+    B = [None]*(N+1)
+    C = [0]*(10001)
+    countingSort(A,B,N,k)
