@@ -12,7 +12,7 @@ def countingSort(A, B, N):
     for i in range(N):
         C[i] = 0
     for j in range(N):
-        C[A[j]] +=1
+        C[A[j]]+=1
     #累積和をとる
     for k in range(1,N):
         C[i] = C[i] + C[i-1]
@@ -21,3 +21,11 @@ def countingSort(A, B, N):
         B[C[A[j]]] = A[j]
         C[A[j]]=-1
 
+    print(*C)
+
+if __name__ == "__main__":
+    N = int(input())
+    A = list(map(int,input().split()))
+    B = [0 for _ in range(N)]
+    C = [0 for _ in range(N)]
+    countingSort(A,B,N)
