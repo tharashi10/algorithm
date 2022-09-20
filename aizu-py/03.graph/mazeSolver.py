@@ -1,5 +1,7 @@
 """:
 迷路問題をDFSを使って解く
+今回は再帰を利用する
+また、座標はCollectionを使っている
 """
 
 from collections import namedtuple
