@@ -52,7 +52,7 @@ class CpuQueue:
 
 def solver():
     n,t = map(int,input().split())
-    m = 1000
+    m = 50001
     queue = [[]]* m
     for i in range(n):
         a,b = input().split()
