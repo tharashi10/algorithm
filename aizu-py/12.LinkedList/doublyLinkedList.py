@@ -79,29 +79,16 @@ class LinkedList:
 
     # TODO 見直し
     def deleteNode(self, x):
-        if self.head is None:
-            return
-        else:
-            cur = self.head
-            # 先頭とマッチした場合
-            if cur.data == x:
-                self.head = cur.next 
-                cur = None
-                return
+        dummyHead = Node(None)
+        dummyHead.next = self.head
+        node = dummyHead
+
+        while node.next:
+            if node.next.data == x:
+                node.next = node.next.next
+                #break
             else:
-                # 先頭ではないものを消す場合
-                while cur.next is not None:
-                    if cur.data == x:
-                        break
-                    prev = cur
-                    cur = prev.next
-                # breakした後 cur が削除対象となる
-                if cur is None: # Nodeがなかった場合
-                    return
-                
-                # Node が見つかった場合, nextを上書く
-                prev.next = cur.next
-                return
+                node = node.next
 
     def printNode(self):
         cur = self.head
@@ -124,13 +111,13 @@ if __name__=="__main__":
         command = input().rstrip()
         #print(command)
         if command[0] == "i":
-            linkedList.insertNodeAtFirst(command[7:])
+            linkedList.insertNodeAtFirst(int(command[7:]))
         elif command[6] == "F":
             linkedList.deleteAtFirst()
         elif command[6] == "L":
             linkedList.deleteLast()
         else :
             #command == "deleteFirst":
-            linkedList.deleteNode(command[7:])
+            linkedList.deleteNode(int(command[7:]))
             
     linkedList.printNode()
