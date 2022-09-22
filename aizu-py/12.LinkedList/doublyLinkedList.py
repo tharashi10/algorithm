@@ -45,62 +45,74 @@ class Node:
         
 class LinkedList:
     def __init__(self):
-        self.head = None
-        
+        self.start = Node(None)
+        self.start.prev = self.start
+        self.start.next = self.start
+
     def insertNodeAtFirst(self, x):
-        if self.head is None:
-            newNode = Node(x)
-            self.head = newNode
-        else:
-            newNode = Node(x)
-            newNode.next = self.head
-            self.head = newNode # headを更新
+        newNode = Node(x)
+        newNode.prev = self.start
+        newNode.next = self.start.next
+        self.start.next = newNode
+        self.start.next.prev = newNode
+        #print("-----")
+        #print(newNode.prev)
+        #print(newNode.next)
 
     def deleteAtFirst(self):
-        if self.head is None:
+        delNode = self.start.next
+        if delNode == self.start:
             print("The linked list empty. Cannot delete an element.")
             return
         else:
-            node = self.head
-            self.head = self.head.next
-            del node
+            if delNode.next != self.start:
+                self.start.next = delNode.next
+                delNode.next.prev = self.start
+            else:
+                self.start.next = self.start
+
+    def listSearch(self, x):
+        current = self.start.next
+        while current != self.start and current.data != x:
+            current = current.next
+        return current
+
+    def deleteNode(self, node):
+        if node == self.start:
+            return
+        print("---deleteNode--")
+        print(node.prev)
+        node.prev.next = node.next
+        node.next.prev = node.prev
+
+    def deleteNodeByData(self, x):
+        self.deleteNode(self.listSearch(x))
 
     def deleteLast(self):
-        if self.head is None:
+        current = self.start.next
+        if current == self.start:
+            print("The linked list empty. Cannot delete an element.")
             return
+        
         else:
-            cur = self.head
-            while cur.next is not None:
-                prev = cur
-                cur = cur.next
-            
-            prev.next = None
-            cur = None
+            while current.next != self.start:
+                current = current.next
+            print('---deleteLast---')
+            #self.deleteNode(current)
+            current.prev.next = self.start
 
-    # TODO 見直し
-    def deleteNode(self, x):
-        dummyHead = Node(None)
-        dummyHead.next = self.head
-        node = dummyHead
-
-        while node.next:
-            if node.next.data == x:
-                node.next = node.next.next
-                #break
-            else:
-                node = node.next
-
+            #[TODO]
+    
     def printNode(self):
-        cur = self.head
-        while cur is not None:
-            if cur.next is not None:
-                print(cur.data, end=" ")
+        current = self.start.next
+        while current != self.start:
+            if current.next is not self.start:
+                print(current.data, end=" ")
             else:
-                print(cur.data)
-            cur = cur.next
+                print(current.data)
+            current = current.next
 
 if __name__=="__main__":
-    d = set()
     linkedList = LinkedList()
 
     for _ in range(int(input())):
