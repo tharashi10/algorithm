@@ -1,6 +1,6 @@
 # Template
 ## 標準入力系
-- 横並び数字
+### 横並び数字
 ```:python
 10
 8 5 9 2 6 3 7 1 10 4
@@ -9,7 +9,7 @@ N = input()
 A = list(map(int,input().split())) 
 ```
 
-- 縦並び数字
+### 縦並び数字
 ```:python
 5 
 5
@@ -22,7 +22,7 @@ N = int(input())
 A = [int(input()) for _ in range(N)]
 ```
 
-- ２個並び(文字・数字混合)
+### ２個並び(文字・数字混合)
 ```:python
 5 100
 p1 150
@@ -38,7 +38,7 @@ queue = [[]]* m
         queue[i] = [a,int(b)]
 ```
 
-- 改行コードを取り除く
+### 改行コードを取り除く
 ```:python
 2 
 insert 1000000000
@@ -48,7 +48,7 @@ for _ in range(int(input())):
     command = input().rstrip()
 ```
 
-- 迷路
+### 迷路
 ```:python
 7 8  # 行数R/ 列数C
 2 2  # Start sy,sx
@@ -79,6 +79,8 @@ y, x = queue.pop() 　　#最後
 y, x = queue.append() #追加
 ```
 
+## 構造体の扱い
+### Collections
 - namedTuple(簡単に immutable なクラスを定義)
 ```:python
 from collections import namedtuple
