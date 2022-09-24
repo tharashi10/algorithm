@@ -9,7 +9,7 @@
 | 04 | NumberTheory | Bisection, Fibonacci, GCD  |
 | 05 | StackQueue   | CPUQueue, Puddle, ReversedPolish |
 | 06 | Tree         | RootedTree |
-| 07 | DevideConquer| Koch, Exhaustive |
+| 07 | DevideConquer| Koch, ExhaustiveSearch, InversionCount |
 | 08 | DynamicPlan  | Fibonacci |
 | 09 | Heap         |  |
 | 10 | BinaryTree   | BinarySearch |
