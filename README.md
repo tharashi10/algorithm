@@ -1,17 +1,17 @@
 ### Python Procon
 - Contents
 
-| ## |  Algorithm   |   |   |
-|----|--------------|---|---|
-| 01 | Search       |   |   |
-| 02 | sort         |   |   |
-| 03 | graph        |   |   |
-| 04 | numberTheory |   |   |
-| 05 | stackQueue   |   |   |
-| 06 | tree         |   |   |
-| 07 | devideConquer|   |   |
-| 08 | dynamicPlan  |   |   |
-| 09 | heap         |   |   |
-| 10 | binaryTree   |   |   |
-| 11 | heuristic    |   |   |
-| 12 | LinkedList   |   |   |
+| ## |  Algorithm   |   |
+|----|--------------|---|
+| 01 | Search       | DFS, LinearSearch |
+| 02 | Sort         | BubbleSort, CountingSort, HeapSort, InsertionSort,MergeSort, SelectionSort, ShellSort, StableSort|
+| 03 | Graph        | Maze, BFS/DFS, AdjacentList/Matrix |
+| 04 | NumberTheory | Bisection, Fibonacci, GCD  |
+| 05 | StackQueue   | CPUQueue, Puddle, ReversedPolish |
+| 06 | Tree         | RootedTree |
+| 07 | DevideConquer| Koch, Exhaustive |
+| 08 | DynamicPlan  | Fibonacci |
+| 09 | Heap         |  |
+| 10 | BinaryTree   | BinarySearch |
+| 11 | Heuristic    |  |
+| 12 | LinkedList   | Singly/DoublyLinkedList |
