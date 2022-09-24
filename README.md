@@ -1,7 +1,7 @@
 ### Python Procon
 - Contents
 
-| ## |  Algorithm   |   |
+| ## |  Algorithm   | Detail |
 |----|--------------|---|
 | 01 | Search       | DFS, LinearSearch |
 | 02 | Sort         | BubbleSort, CountingSort, HeapSort, InsertionSort,MergeSort, SelectionSort, ShellSort, StableSort|
