@@ -119,8 +119,18 @@ print(He.age)
 print(*He)
 ```
 
-## 辞書やリストのソート
+## 辞書やリストをソートしたい場合
 - lambdaを使う
 ```py
 l_stable = sorted(l, key=lambda x:x[1])
+```
+
+## リストの重複をなくしてUniqueにしたい場合
+- Setを使う(setは数学的な集合を表現するCollectionと覚えておく)
+- そのため、重複要素は排除される。また論理演算(& や | など)も自在
+```py
+A_list = [1, 2, 3]
+B_list = [1, 2, 4]
+s_AB = set(A_list + B_list)
+list(s_AB)
 ```
