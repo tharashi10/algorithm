@@ -1,5 +1,5 @@
 aizu-rust/*/target/*
 aizu-rust/*/*.lock
 python/__pycache__
-atcoder/*
+#atcoder/ABC*
 cpp/*
