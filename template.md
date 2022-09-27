@@ -95,6 +95,17 @@ while i<n:
     print("%s %s" %(A[i][0],A[i][1]))
     i+=1
 ```
+
+#### カスタマイズされた形式（print(f'{}')を使う）
+```py
+'''
+node 0: parent = -1, sibling = -1, degree = 2, depth = 0, height = 3, root
+node 1: parent = 0, sibling = 4, degree = 2, depth = 1, height = 1, internal node
+node 2: parent = 1, sibling = 3, degree = 0, depth = 2, height = 0, leaf
+'''
+print(f'node {id}: parent = {node[id].parent}, sibling = {s}, degree = {d}, depth = {depth_list[id]}, height = {height_list[id]}, {node_type}')
+
+```
 ----
 
 ## キューの扱い
