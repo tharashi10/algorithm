@@ -1,6 +1,7 @@
 '''二分木(Binary Tree)
 Nodeに対して、
 Parent, Left, Rightを決める
+→この情報から、再帰を使って高さ・深さ・次数・Nodeタイプを判別する
 --
 Input
 9
@@ -34,59 +35,86 @@ class Node:
         self.left = left
         self.right = right
 
-
+# 深さを設定する
 def set_depth(vid,d):
     depth_list[vid] = d
-    if (node[vid].left == -1 and node[vid].right == -1):
+    if node[vid].left == -1 and node[vid].right == -1:
         return
+    
     if (node[vid].left != -1):
         set_depth(node[vid].left,d+1)
     if (node[vid].right != -1):
         set_depth(node[vid].right,d+1)
 
-def set_height(vid,h):
-    if (node[vid].left == -1 and node[vid].right == -1):
-        return
-    if (node[vid].left != None):
-        set_height(node[vid].left,d+1)
-    if (node.right != None):
-        set_height(node[vid].right,d+1)
+# Heightを設定する
+def set_height(vid):
+    h1=0
+    h2=0
+    if (node[vid].left != -1):
+        h1 = set_height(node[vid].left) + 1
+    if (node[vid].right != -1):
+        h2 = set_height(node[vid].right) + 1
+    height_list[vid] = max(h1,h2)
+    return height_list[vid]
+
 
 def get_siblings(vid):
-    # 自身がLeftだった場合
-    if node[node[vid].parent].right != node[vid] and node[node[vid].parent].right != -1:
-        return node[node[idx].parent].right
+    # 根の場合
+    if node[vid].parent == -1 :
+        return -1
+    
     # 自身がRightだった場合
-    if node[node[vid].parent].left != node[vid] and node[node[vid].parent].left != -1:
+    if node[node[vid].parent].right == vid:
         return node[node[vid].parent].left
+    
+    # 自身がLeftだった場合
+    if node[node[vid].parent].left == vid:
+        return node[node[vid].parent].right
 
-    return None
-
-
-def print_output():
-    print(node)
-    print(depth_list)
 
 if __name__ == "__main__":
     n = int(input())
     node = []
     depth_list = [None]*n
+    height_list = [None]*n
     
+    # 初期化
     for i in range(n):
         node.append(Node(-1,-1,-1))
     
-    # InputからNode を作る工程
+    # Input から Node を作る工程
     for j in range(n):
         vid,l,r = map(int,input().split())
         node[vid].left = l
         node[vid].right = r
-        if node[vid].left != -1:
-            node[l].parant = vid
-        if node[vid].right != -1:
-            node[r].parant = vid
+        if l != -1:
+            node[l].parent = vid
+        if r != -1:
+            node[r].parent = vid
 
-    set_depth(0,0)
-    for k in range(n):
-        print(get_siblings(k))
-    
-    print_output()
+    # RootはVID=0とは限らないので、Rootを特定する
+    for id in range(n):
+        if node[id].parent == -1:
+            root_vid = id
+            break
+    set_depth(root_vid,0)
+    set_height(root_vid)
+    for id in range(n):
+        s = get_siblings(id)
+
+        # NodeType
+        if node[id].parent == -1:
+             node_type = "root"
+        elif node[id].right == node[id].left == -1:
+            node_type = "leaf"
+        else:
+            node_type = "internal node"
+
+        # Degree
+        if node[id].right == node[id].left == -1:
+             d = 0
+        elif node[id].right >= 0 and node[id].left >= 0:
+            d = 2
+        else:
+            d = 1 
+        print(f'node {id}: parent = {node[id].parent}, sibling = {s}, degree = {d}, depth = {depth_list[id]}, height = {height_list[id]}, {node_type}')
