@@ -88,6 +88,31 @@ C 1
 A = [[kind,int(num)] for kind,num in (list(input().split()) for _ in range(0,n))]
 ```
 
+#### 木の入力
+
+```py
+'''
+9
+0 1 4
+1 2 3
+2 -1 -1
+3 -1 -1
+4 5 8
+5 6 7
+6 -1 -1
+7 -1 -1
+8 -1 -1
+'''
+for j in range(n):
+    vid,l,r = map(int,input().split())
+    node[vid].left = l
+    node[vid].right = r
+    if l != -1:
+        node[l].parent = vid
+    if r != -1:
+        node[r].parent = vid
+```
+
 ## 標準出力系
 #### 「文字 数字」で出力する
 ```py
@@ -106,6 +131,12 @@ node 2: parent = 1, sibling = 3, degree = 0, depth = 2, height = 0, leaf
 print(f'node {id}: parent = {node[id].parent}, sibling = {s}, degree = {d}, depth = {depth_list[id]}, height = {height_list[id]}, {node_type}')
 
 ```
+
+#### 改行せずに出力する(endを利用)
+```py
+print(f'{vid}',end="")
+```
+
 ----
 
 ## キューの扱い
