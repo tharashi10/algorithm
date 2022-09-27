@@ -92,7 +92,7 @@ if __name__ == "__main__":
         if r != -1:
             node[r].parent = vid
 
-    # RootはVID=0とは限らないので、Rootを特定する
+    # RootはVID=0とは限らないので、Rootを特定する(重要!)
     for id in range(n):
         if node[id].parent == -1:
             root_vid = id
