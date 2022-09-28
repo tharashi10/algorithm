@@ -15,6 +15,7 @@ Output
 3 4 2 5 1
 '''
 
+
 class Node:
     def __init__(self,parent,left,right):
         self.parent = parent
@@ -22,18 +23,11 @@ class Node:
         self.right = right
 
 def reconst(subtree_pre,subtree_in):
-    if len(subtree_pre)<=0 or len(subtree_in)<=0:
+    if len(subtree_pre)==0 or len(subtree_in)==0:
         return
     root = subtree_pre[0]
-    if node[root].parent == -1:
-        node[root].parent = -1
-    
-    for i in range(len(subtree_pre)):
-        if subtree_in[i]==root:
-            mid = i
-    
-    print(mid)
-    if mid >0:
+    mid = subtree_in.index(root)
+    if mid > 0:
         node[root].left = subtree_pre[1:mid+1][0]
         node[subtree_pre[1:mid+1][0]].parent = root
     if mid+1 < len(subtree_pre):
@@ -43,18 +37,38 @@ def reconst(subtree_pre,subtree_in):
     reconst(subtree_pre[1:mid+1], subtree_in[:mid])
     reconst(subtree_pre[mid+1:], subtree_in[mid + 1:])
 
+def postoder(vid):
+    if vid == None:
+        return
+    if node[vid].left != -1:
+        postoder(node[vid].left)
+    if node[vid].right != -1:
+        postoder(node[vid].right)
+    post.append(vid)
+
 if __name__ == "__main__":
     n = int(input())
     pre_order = list(map(int,input().split()))
     in_order = list(map(int,input().split()))
     
     node = []
-    # Init
+    post = []
+    # Initiation
     for i in range(n+1):
-        node.append(Node(-1,-1,-1))
+        if i==0:
+            node.append(Node(None,None,None))
+        else:
+            node.append(Node(-1,-1,-1))
     
-    # Reconstruct
+    # Reconstruct:二分木
     reconst(pre_order,in_order)
-    for i in range(1,n+1):
-        print(node[i].parent,node[i].left,node[i].right)
+
+    # RootはVID=0とは限らないので、Rootを特定する(重要!)
+    for id in range(1,n+1):
+        if node[id].parent == -1:
+            root_vid = id
+            break
+    
+    postoder(root_vid)
+    print(" ".join(map(str, post)))
     
