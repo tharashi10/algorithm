@@ -19,16 +19,42 @@ class Node:
     def __init__(self,parent,left,right):
         self.parent = parent
         self.left = left
-        self.right right
+        self.right = right
 
-def reconst(subtree_L,subtree_R):
-    if len(subtree_L)<=1 or len(subtree_R)<=1:
+def reconst(subtree_pre,subtree_in):
+    if len(subtree_pre)<=0 or len(subtree_in)<=0:
         return
+    root = subtree_pre[0]
+    if node[root].parent == -1:
+        node[root].parent = -1
+    
+    for i in range(len(subtree_pre)):
+        if subtree_in[i]==root:
+            mid = i
+    
+    print(mid)
+    if mid >0:
+        node[root].left = subtree_pre[1:mid+1][0]
+        node[subtree_pre[1:mid+1][0]].parent = root
+    if mid+1 < len(subtree_pre):
+        node[root].right = subtree_pre[mid+1:][0]
+        node[subtree_pre[mid+1:][0]].parent = root
+    
+    reconst(subtree_pre[1:mid+1], subtree_in[:mid])
+    reconst(subtree_pre[mid+1:], subtree_in[mid + 1:])
 
 if __name__ == "__main__":
     n = int(input())
     pre_order = list(map(int,input().split()))
     in_order = list(map(int,input().split()))
     
+    node = []
+    # Init
+    for i in range(n+1):
+        node.append(Node(-1,-1,-1))
+    
+    # Reconstruct
     reconst(pre_order,in_order)
+    for i in range(1,n+1):
+        print(node[i].parent,node[i].left,node[i].right)
     
