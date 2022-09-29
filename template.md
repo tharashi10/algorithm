@@ -137,6 +137,12 @@ print(f'node {id}: parent = {node[id].parent}, sibling = {s}, degree = {d}, dept
 print(f'{vid}',end="")
 ```
 
+#### 先頭に空白を入れて残りを表示する
+- 加算とjoinを使う
+```py
+print(' ' + ' '.join(map(str,l)))
+```
+
 ----
 
 ## キューの扱い
