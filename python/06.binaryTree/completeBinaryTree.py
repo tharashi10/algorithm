@@ -1,3 +1,18 @@
+""":
+完全二分木
+Input
+5
+7 8 1 2 3
+------
+Output
+node 1: key = 7, left key = 8, right key = 1, 
+node 2: key = 8, parent key = 7, left key = 2, right key = 3, 
+node 3: key = 1, parent key = 7, 
+node 4: key = 2, parent key = 8, 
+node 5: key = 3, parent key = 8,
+"""
+
+
 N = int(input())
 H = list(map(int,input().split()))
 
