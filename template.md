@@ -168,9 +168,14 @@ print(*He)
 ```
 
 ## 辞書やリストをソートしたい場合
-- lambdaを使う
+##### lambdaを使う
 ```py
 l_stable = sorted(l, key=lambda x:x[1])
+```
+
+##### List[Dict]にてDict値でソートしたい場合(desc)
+```py
+sample_list.sort(key=lambda x: x["trg_col"], reverse=True)
 ```
 
 ## リストの重複をなくしてUniqueにしたい場合
