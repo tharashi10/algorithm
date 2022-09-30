@@ -198,3 +198,6 @@ h = [-1*i for i in h] #符号反転させる
 heapify(h) #Listをヒープ構造に変換する
 max_v = -1 * heappop(h) #最大値を取り出す
 ```
+
+## Python Document
+- https://docs.python.org/3/tutorial/index.html 
