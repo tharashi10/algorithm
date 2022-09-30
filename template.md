@@ -187,3 +187,14 @@ B_list = [1, 2, 4]
 s_AB = set(A_list + B_list)
 list(s_AB)
 ```
+
+## 優先度キューを扱う場合
+- [Document](https://docs.python.org/ja/3/library/heapq.html)
+- 優先度を最大値とする場合は、Heapifyとマイナスの掛け算を利用する
+```py
+from heapq import heappop, heappush, heapify
+h = [3,1,2,5,6]
+h = [-1*i for i in h] #符号反転させる
+heapify(h) #Listをヒープ構造に変換する
+max_v = -1 * heappop(h) #最大値を取り出す
+```
