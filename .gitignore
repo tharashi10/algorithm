@@ -3,3 +3,4 @@ aizu-rust/*/*.lock
 python/__pycache__
 #atcoder/ABC*
 cpp/*
+mit/*
