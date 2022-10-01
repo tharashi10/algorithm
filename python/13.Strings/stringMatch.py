@@ -1,4 +1,5 @@
 # ALDS1_14_A
+# Naive String Match
 """
 Input: 
 aabaaa
