@@ -11,7 +11,8 @@
 | 06 | BinaryTree   | RootedTree, BinaryTree, TreeWalk, TreeReconstruct,BinarySearch |
 | 07 | DevideConquer| Koch, ExhaustiveSearch, InversionCount, QuickSort |
 | 08 | DynamicPlan  | Fibonacci |
-| 09 | Heap         | MaxHeapify |
+| 09 | Heap         | MaxHeapify, HeapSort |
 | 10 | Greedy       |  |
 | 11 | Heuristic    |  |
 | 12 | LinkedList   | Singly/DoublyLinkedList |
+| 13 | Strings      | NaiveStringMatch |
