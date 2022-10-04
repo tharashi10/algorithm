@@ -14,73 +14,64 @@ print
 -------
  1 12 17 20 25 30 88
  30 12 1 20 17 25 88
-""""
+"""
 
 class Node:
-    def __init__(self,key,parent,right,left):
+    def __init__(self,key,right,left):
         self.key = key
-        self.parent = parent
         self.right = right
         self.left = left
 
-def insert(Tree, num):
-    y = None # y: numと比較するやつ
-    x = Tree[0] #root
 
-    # rootがあればぐるぐる
-    while x != Node(-1,-1,-1,-1):
-        y = x
-        if num.key < y.key:
-            x = x.left
+def insert(key):
+    global root  # Noneである可能性あり
+    if root:
+        child = root
+        while child:
+            if key < child.key:
+                parent = child
+                child = child.left
+            else:
+                parent = child
+                child = child.right
+        # この時点で末端まできている
+        if key < parent.key:
+            parent.left = Node(key,None,None)
         else:
-            x = x.right
-    
-    num.parent = y # num : Node(key,parent,right,left)
-                   # ex  : Node(23,y,-1,-1)  
-
-    # Treeが空かどうかで分岐
-    if y == Node(-1,-1,-1,-1):
-        Tree[0] = z
-    elif num.key < y.key:
-        y.left = num
+            parent.right = Node(key,None,None)
     else:
-        y.right = num
+        # rootが存在しない場合
+        root = Node(key,None,None)
 
+def walktree(node,order):
+    walked = ""
+    if node:
+        if order=="Pre":
+            walked += f' {node.key}'
+        walked += walktree(node.left,order)
+        if order=="In":
+            walked += f' {node.key}'
+        walked += walktree(node.right,order)
+    #print(walked)
+    return walked
 
-def print():
+def prints():
+    print(walktree(root,"In"))
+    print(walktree(root,"Pre"))
+
+def delete():
     return None
 
-
-def preorder(vid):
-    print(f' {vid}', end="")
-    if node[vid].left == -1 and node[vid].right == -1:
-        return
-    if node[vid].left != -1:
-        preorder(node[vid].left)
-    if node[vid].right != -1:
-        preorder(node[vid].right)   
-
-def interorder(vid):
-    if vid == None:
-        return
-    if node[vid].left != -1:
-        interorder(node[vid].left)
-    print(f' {vid}',end="")
-    if node[vid].right != -1:
-        interorder(node[vid].right)
-
+def find():
+    return None
 
 if __name__ == "__main__":
-    n = input()
-    node = []
-
-    # init
-    for i in range(n):
-        node.append(Node(-1,-1,-1))
-    
-    for i in range(n):
-        s = str(input())
-        if s.startwith("insert"):
-            insert(node, s[7:])
-        else:
-            print()
+    root = None
+    # REPL
+    # Key:標準入力でくる命令 | Value:メソッド
+    cmds = {"print":prints, "insert":insert, "find":find, "delete":delete}
+    for i in range(int(input())):
+        cmd_name, *key = input().split()
+        # cmds[cmd_name] = <function __main__.insert()>
+        # map(int,key) = [<map at 0x1076f6980>]
+        cmds[cmd_name](*map(int,key))
