@@ -15,4 +15,5 @@
 | 10 | Greedy       |  |
 | 11 | Heuristic    |  |
 | 12 | LinkedList   | Singly/DoublyLinkedList |
-| 13 | Strings      | NaiveStringMatch |
+| 13 | Strings      | NaiveStringMatch,StringSearch |
+| 14 | Hash         |  |
