@@ -80,7 +80,7 @@ def prints():
     print(walktree(root,"In"))
     print(walktree(root,"Pre"))
 
-def delete():
+def delete(key):
     global root
     parent, node= None, root
     while node.key != key:
