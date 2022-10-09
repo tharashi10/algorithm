@@ -10,7 +10,7 @@
 | 05 | StackQueue   | CPUQueue, Puddle, ReversedPolish, Priority Queue |
 | 06 | BinaryTree   | RootedTree, BinaryTree, TreeWalk, TreeReconstruct,BinarySearch |
 | 07 | DevideConquer| Koch, ExhaustiveSearch, InversionCount, QuickSort |
-| 08 | DynamicPlan  | Fibonacci |
+| 08 | DynamicPlan  | Fibonacci, Matrix-chain Multiplication |
 | 09 | Heap         | MaxHeapify, HeapSort, BinarySearchTree1,2,3 |
 | 10 | Greedy       |  |
 | 11 | Heuristic    |  |
