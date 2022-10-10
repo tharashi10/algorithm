@@ -12,7 +12,7 @@
 | 07 | DevideConquer| Koch, ExhaustiveSearch, InversionCount, QuickSort |
 | 08 | DynamicPlan  | Fibonacci, Matrix-chain Multiplication |
 | 09 | Heap         | MaxHeapify, HeapSort, BinarySearchTree1,2,3 |
-| 10 | Greedy       |  |
+| 10 | Greedy       | Changes |
 | 11 | Heuristic    |  |
 | 12 | LinkedList   | Singly/DoublyLinkedList |
 | 13 | Strings      | NaiveStringMatch,StringSearch |
