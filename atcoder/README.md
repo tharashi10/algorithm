@@ -38,7 +38,7 @@
 
 | ## | Title | URL | Knowledge |
 |----|-------|-------|--|
-| 01 | 部分和の組み合わせ | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ITP1_7_B&lang=ja | 全探索, Listのfiter |
+| 01 | 組み合わせ(基本)| https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ITP1_7_B&lang=ja | 全探索, Listのfiter |
 | 02 |  約数8個だけの整数 | https://atcoder.jp/contests/abc106/tasks/abc106_b | 約数の全探索 |
 | 03 | 全探索：ビット全探索 | | |
 | 04 | 全探索：順列全探索 | | |
