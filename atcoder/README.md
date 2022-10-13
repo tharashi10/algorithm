@@ -41,7 +41,7 @@
 | 01 | 組み合わせ(基本)| https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ITP1_7_B&lang=ja | 全探索, Listのfiter |
 | 02 |  約数8個だけの整数 | https://atcoder.jp/contests/abc106/tasks/abc106_b | 約数の全探索 |
 | 03 | ACGT 文字列 | https://atcoder.jp/contests/abc122/tasks/abc122_b | 連続値のカウント |
-| 04 | 全探索：順列全探索 | | |
+| 04 | Karaoke | https://atcoder.jp/contests/pakencamp-2019-day3/tasks/pakencamp_2019_day3_c | ひたすらFor文(組み合わせ時のfor文のIndex) |
 | 05 | 二分探索 | | |
 | 06 | 深さ優先探索 | | |
 | 07 | 幅優先探索 | | |
