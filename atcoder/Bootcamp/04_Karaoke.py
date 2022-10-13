@@ -11,6 +11,8 @@ Input:
 -----
 Output
 84
+---
+実行速度: 235 ms
 """
 
 n, m = input().split()
