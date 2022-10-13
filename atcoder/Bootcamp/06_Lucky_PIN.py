@@ -1,43 +1,22 @@
-""":
+""": Atcoder D - Lucky PIN
+普通にfor ..for ..forで回すとTLEになる.
+なかなか厄介.
+Pointは、今回3桁指定なので[0-9][0-9][0-9]で最大1000個しかパターンがないということ
+->したがって、000-999の中に全探索したものが含まれているかを調べればOK
+-------
+実行時間: 27 ms
 """
 
-import re
 n=int(input())
 s=str(input())
-
-sets=set()
-index_lst=[i for i in range(n)]
-
-if (n-3)==1:
-    for i in index_lst:
-        sets.add(s[:i]+s[i+1:])
-        print(len(sets))
-
-if (n-3)==2:
-    for i in index_lst:
-        index_lst.remove(i)
-        ss = s[:i]+'N'+s[i+1:]
-        for j in index_lst:
-            sss = ss[:j]+'N'+ss[j+1:]
-            sets.add(sss.replace('N',''))
-
-if (n-3)==3:
-    for i in range(len(index_lst)-2):
-        ss = s[:i]+'A'+s[i+1:]
-        for j in range(i+1,len(index_lst)-1):
-            sss = ss[:j]+'B'+ss[j+1:]
-            for k in range(j+1,len(index_lst)):
-                ssss = sss[:k]+'C'+sss[k+1:]
-                sets.add(re.sub(r'[A-C]','',ssss))
-
-if (n-3)>3:
-    for i in range(len(index_lst)-2):
-        ss = s[i]
-        for j in range(i+1,len(index_lst)-1):
-            sss = s[j]
-            for k in range(j+1,len(index_lst)):
-                ssss = s[k]
-                st = ss+sss+ssss
-                sets.add(st)
-
-print(len(sets))
+cnt = 0
+for i in range(1000):
+    v = str(i).zfill(3)
+    p = s.find(v[0])
+    if p!=-1:
+        pp = s.find(v[1],p+1)
+        if pp!=-1:
+            ppp = s.find(v[2],pp+1)
+            if ppp !=-1:
+                cnt+=1
+print(cnt)
