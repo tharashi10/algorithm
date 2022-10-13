@@ -47,7 +47,7 @@
 | 04 | Karaoke | https://atcoder.jp/contests/pakencamp-2019-day3/tasks/pakencamp_2019_day3_c | ひたすらFor文(組み合わせ時のfor文のIndex)。<br>これが解ければ全探索に慣れたと思って良いです。とQiitaに書かれおり、特に何もみずに解けたのでこれからは全探索慣れたと言う。 |
 | 05 | Half and Half | https://atcoder.jp/contests/abc095/tasks/arc096_a | よく出てきそうな場合分け問題 |
 | 06 | **Lucky PIN** | https://atcoder.jp/contests/sumitrust2019/tasks/sumitb2019_d | 全探索で逆算で考える.<br>`str.zfill()`の使い方<br>find(str)の使い方;Trueならindexを返す.<br>find(str,num)の使い方:第二引数で開始点を指定<br> |
-| 07 | 幅優先探索 | | |
+| 07 | Archaeological Sites | https://atcoder.jp/contests/joi2007ho/tasks/joi2007ho_c | Listのフィルタ(値の削除)、ベクトルの演算(Zipを使う) |
 | 08 | 動的計画法：ナップザック DP | | |
 | 09 | 動的計画法：区間 DP | | |
 | 10 | 動的計画法：bit DP | | |
