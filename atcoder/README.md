@@ -49,7 +49,7 @@
 | 06 | **Lucky PIN** | https://atcoder.jp/contests/sumitrust2019/tasks/sumitb2019_d | 全探索で逆算で考える.<br>`str.zfill()`の使い方<br>find(str)の使い方;Trueならindexを返す.<br>find(str,num)の使い方:第二引数で開始点を指定<br> |
 | 07 | Archaeological Sites | https://atcoder.jp/contests/joi2007ho/tasks/joi2007ho_c | Listのフィルタ(値の削除)、ベクトルの演算(Zipを使う)<br>と思ったが、in List使った時点で、TLEになる。<br>setに置換して頑張るしかない模様。なんとかAC.. <br>.pyの場合、 Codeは最小限にかかないとACにならない |
 | 08 | AtCoder Market | https://atcoder.jp/contests/s8pc-6/tasks/s8pc_6_b | 計算量が$N^3$なので全探索有効<br>ステップ系での`abs()`の使い方|
-| 09 | 動的計画法：区間 DP | | |
+| 09 | Constellation | https://atcoder.jp/contests/joi2008yo/tasks/joi2008yo_d | ある点に着目して考え得る平行移動ベクトルを全探索する<br> 座標を返すLambda式<br> set(tuple)での計算(座標)|
 | 10 | 動的計画法：bit DP | | |
 | 11 | 動的計画法：その他 | | |
 | 12 | 最短経路問題：ダイクストラ法 | | |
