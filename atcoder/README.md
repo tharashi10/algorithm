@@ -51,7 +51,7 @@
 | 08 | AtCoder Market | https://atcoder.jp/contests/s8pc-6/tasks/s8pc_6_b | 計算量が$N^3$なので全探索有効<br>ステップ系での`abs()`の使い方|
 | 09 | Constellation | https://atcoder.jp/contests/joi2008yo/tasks/joi2008yo_d | ある点に着目して考え得る平行移動ベクトルを全探索する<br> 座標を返すLambda式<br> set(tuple)での計算(座標)|
 | 10 | Exhaustive Search | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_5_A | Bit探索の基本<br>シフト演算のユースケースを理解<br> `(x>>n)&1`(xは10進数. 2進数で表した際にn桁目の数が1となる場合True|
-| 11 | 動的計画法：その他 | | |
+| 11 | Switch | https://atcoder.jp/contests/abc128/tasks/abc128_c | 全探索bit<br>全探索bit分かっててもSwitchと電球で頭が混乱する→5日後再度解く(2022-10-21) |
 | 12 | 最短経路問題：ダイクストラ法 | | |
 | 13 | 最短経路問題：ワーシャルフロイド法 | | |
 | 14 | 最小全域木問題 | | |
