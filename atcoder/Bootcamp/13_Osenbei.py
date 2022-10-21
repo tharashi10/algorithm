@@ -4,6 +4,7 @@
 0 1 0 1 0
 1 0 0 0 1
 ---
+[TODO] 問題文にあるテストケースはAC確認済み
 方針
 ・裏返しによって煎餅は反転するだけ。
 ・ある一連の操作があったとしても順番に依存しない。
@@ -18,21 +19,23 @@ for i in range(h):
     M.append(list(map(int,input().split())))
 
 result = 0
-for i in range(2*h):
+for i in range(2**h):
+    
     for k in range(h):
-        if (i>>k)&1:
+        if (i >>k )&1:
             for j in range(w):
                 if M[k][j] == 0:
                     M[k][j] = 1
                 else:
                     M[k][j] = 0
+    
     tmp = 0
-    for i in range(w):
-        a = 0
-        for j in range(h):
-            if M[j][i]==0:
-                a+=1
-        tmp += max(a,h-a)
+    for col in range(w):
+        zero_cnt = 0
+        for rec in range(h):
+            if M[rec][col]==0:
+                zero_cnt +=1
+        tmp += max(zero_cnt,h-zero_cnt)
     result = max(result,tmp)
 
 print(result)
