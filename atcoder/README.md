@@ -53,7 +53,7 @@
 | 10 | Exhaustive Search | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_5_A | Bit探索の基本<br>シフト演算のユースケースを理解<br> `(x>>n)&1`(xは10進数. 2進数で表した際にn桁目の数が1となる場合True|
 | 11 | Switch | https://atcoder.jp/contests/abc128/tasks/abc128_c | 全探索bit<br>全探索bit分かっててもSwitchと電球で頭が混乱する→5日後再度解く(2022-10-21) |
 | 12 | Faction | https://atcoder.jp/contests/abc002/tasks/abc002_4 | 全探索bit<br> 2重ループを一気に抜け出す方法(flag利用)<br> nC2をfor..forで記述|
-| 13 | Osenbei | https://atcoder.jp/contests/joi2008yo/tasks/joi2008yo_e | |
+| 13 | Osenbei | https://atcoder.jp/contests/joi2008yo/tasks/joi2008yo_e | TODO |
 | 14 | 最小全域木問題 | | |
 | 15 | 高速な素数判定法 | | |
 | 16 | 高速なべき乗計算 | | |
