@@ -54,7 +54,7 @@
 | 11 | Switch | https://atcoder.jp/contests/abc128/tasks/abc128_c | 全探索bit<br>全探索bit分かっててもSwitchと電球で頭が混乱する→5日後再度解く(2022-10-21) |
 | 12 | Faction | https://atcoder.jp/contests/abc002/tasks/abc002_4 | 全探索bit<br> 2重ループを一気に抜け出す方法(flag利用)<br> nC2をfor..forで記述|
 | 13 | Osenbei | https://atcoder.jp/contests/joi2008yo/tasks/joi2008yo_e | [TODO] |
-| 14 | 最小全域木問題 | | |
+| 14 | BuildingsColorful | https://atcoder.jp/contests/s8pc-4/tasks/s8pc_4_b| Bit全探索<br>初期値を10**18にすべし |
 | 15 | 高速な素数判定法 | | |
 | 16 | 高速なべき乗計算 | | |
 | 17 | 逆元を使う問題 | | |
