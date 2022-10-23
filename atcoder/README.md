@@ -16,7 +16,7 @@
 | 02 | 全探索：工夫して通り数を減らす全列挙 |OK|
 | 03 | 全探索：ビット全探索 | OK |
 | 04 | 全探索：順列全探索 | OK |
-| 05 | 二分探索 ||
+| 05 | 二分探索 | OK |
 | 06 | 深さ優先探索 ||
 | 07 | 幅優先探索 ||
 | 08 | 動的計画法：ナップザック DP ||
@@ -58,7 +58,7 @@
 | 15 | Average Length | https://atcoder.jp/contests/abc145/tasks/abc145_c | 順列全探索<br>問題はEasy |
 | 16 |  Count Order |https://atcoder.jp/contests/abc150/tasks/abc150_c | 順列全探索<br>問題はTooEasy<br>エラーハンドリングはしなくてOK|
 | 17 | 8 Queens | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_13_A&lang=ja | 順列全探索<br>斜め判定を一時関数的に考える<br>出力でJoin|
-| 18 | 累積和 | | |
+| 18 | Binary Search | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_4_B&lang=ja| |
 | 19 | 累積和: いもす法 | | |
 | 20 | Union-Find | | |
 | 21 | その他のテクニック | | |
