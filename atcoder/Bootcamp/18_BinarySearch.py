@@ -1,6 +1,10 @@
 """
 Binary Search
 ・方針: Midを見つけていく
+・注意: 21行目のrightのIndex -1いらない
+・注意: 28行目の x が大きすぎてList外となるケースを弾くようにしたほうがいい
+(x<listだとACしなかった)
+
 In
 5
 1 2 3 4 5
@@ -11,27 +15,28 @@ Out
 """
 
 n = int(input())
-s = list(map(int,input().split()))
+trg = list(map(int,input().split()))
 m = int(input())
-t = list(map(int,input().split()))
+src = list(map(int,input().split()))
 
 def search(lst, x):
-    left = lst[0]
-    right = lst[len(lst)-1]
-
-    while left<=right:
+    left = 0
+    right = len(lst)
+    while left<right:
         mid=(left+right)//2
         if lst[mid]==x:
             return mid
-        elif x < lst[mid]:
-            right=mid
+        elif x > lst[mid]:
+            left = mid+1
         else:
-            left=mid
+            right=mid
     return -1
 
-for i in range(m):
-    v = search(s,t[i])
+cnt = 0
+for i in range(len(src)):
+    v = search(trg,src[i])
     if v==-1:
-        print("No")
+        continue
     else:
-        print("Yes")
+        cnt+=1
+print(cnt)
