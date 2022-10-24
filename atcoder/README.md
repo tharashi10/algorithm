@@ -17,7 +17,7 @@
 | 03 | 全探索：ビット全探索 | OK |
 | 04 | 全探索：順列全探索 | OK |
 | 05 | 二分探索 | OK |
-| 06 | 深さ優先探索 ||
+| 06 | 深さ優先探索 | OK |
 | 07 | 幅優先探索 ||
 | 08 | 動的計画法：ナップザック DP ||
 | 09 | 動的計画法：区間 DP ||
@@ -59,7 +59,7 @@
 | 16 |  Count Order |https://atcoder.jp/contests/abc150/tasks/abc150_c | 順列全探索<br>問題はTooEasy<br>エラーハンドリングはしなくてOK|
 | 17 | 8 Queens | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_13_A&lang=ja | 順列全探索<br>斜め判定を一時関数的に考える<br>出力でJoin|
 | 18 | Binary Search | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_4_B&lang=ja| 二分探索<br>Midで絞り込む|
-| 19 | 累積和: いもす法 | | |
+| 19 | Pizza | https://atcoder.jp/contests/joi2009ho/tasks/joi2009ho_b | 二分探索は`bisect`を使うべし(Listに昇順でAppend可能)<br>円環なので番兵使う(ラストに原点追加)|
 | 20 | Union-Find | | |
 | 21 | その他のテクニック | | |
 | 22 | 実装問題 | | |
