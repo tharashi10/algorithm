@@ -1,8 +1,9 @@
 # 100問チャレンジ
 ### 作成日
 - 2022-10-11
-- ![Username](https://badges.pufler.dev/years/{username})
-  
+- ![SPM is supported](https://img.shields.io/badge/SPM-Supported-orange)
+- ![reposize](https://img.shields.io/github/repo-size/tharashi10/terraform)
+
 ### 目的
 - AtCoderで自信持ってC/D問題を解けるようにする
 
