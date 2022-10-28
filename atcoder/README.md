@@ -65,7 +65,7 @@
 | 20 | Snuke Festival | https://atcoder.jp/contests/abc077/tasks/arc084_a | 固定する段が大事<br> 3組を考える場合は真ん中をFix(定石)|
 | 21 | 射撃王 | https://atcoder.jp/contests/abc023/tasks/abc023_d| 二分探索<br>最小問題→判定問題と読み解く<br> 探索は両サイドから解を絞ってく|
 | 22 | ムーアの法則 |https://atcoder.jp/contests/arc054/tasks/arc054_b | 二分法(二分探索と同じ考え方)<br>2回微分と`f'(x)`の単調性利用|
-| 23 |  | | |
+| 23 | ダーツ | https://atcoder.jp/contests/joi2008ho/tasks/joi2008ho_c |  |
 
 ---
 ### Competition
@@ -77,7 +77,7 @@
 |------|-------------|-------------|-----|
 | 01   | 2022-10-10~ | 全探索       |  OK |
 | 02   | 2022-10-17~ | 全探索       |  OK |
-| 03   | 2022-10-24~ | 二分探索/DFS ||
+| 03   | 2022-10-24~ | 二分探索/DFS  |     |
 | 04   | 2022-10-31~ |  |  |
 | 05   | 2022-11-07~ |  |  |
 | 06   | 2022-11-14~ |  |  |
