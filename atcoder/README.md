@@ -67,8 +67,8 @@
 | 22 | ムーアの法則 |https://atcoder.jp/contests/arc054/tasks/arc054_b | 二分法(二分探索と同じ考え方)<br>2回微分と`f'(x)`の単調性利用|
 | 23 | ダーツ | https://atcoder.jp/contests/joi2008ho/tasks/joi2008ho_c | Diffして二分探索<br> |
 | 24 | 深さ優先探索 | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_11_B | DFS問題(再帰で)<br>行きがけと帰りがけを利用 |
-| 25 | How Many Islands? | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=1160&lang=jp |  |
-| 26 |  |  |  |
+| 25 | How Many Islands? | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=1160&lang=jp | 再帰の上限数を引き上げるべし<br> Listの作成時Immutableになることに留意 |
+| 26 | Ki | https://atcoder.jp/contests/abc138/tasks/abc138_d |  |
 | 27 |  |  |  |
 | 28 |  |  |  |
 | 29 |  |  |  |
