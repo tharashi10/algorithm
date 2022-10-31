@@ -29,44 +29,40 @@ for i in range(h):
     A.append(list(map(int,input().split())))
 
 def dfs(xid,yid):
-    global cnt
     
-    print(f"Start Checking: xid,yid={xid},{yid}")
+    #print(f"Start Checking: xid,yid={xid},{yid}")
     if xid<0 or xid>=h or yid<0 or yid>=w:
         return
-
-    if reached[xid][yid]:
+    elif reached[xid][yid]:
+        A[xid][yid] = 0
         return
-
-    reached[xid][yid] = True
-    if A[xid][yid]==0:
+    elif A[xid][yid]==0:
         return
-    A[xid][yid] = 0
-    
-    dfs(xid,yid-1)
-    dfs(xid,yid)
-    dfs(xid,yid+1)
+    else:
+        # この部分に入ってきたものは
+        # 壁でも、海でも、既訪問でもないので、探索する
+        reached[xid][yid] = True
+        A[xid][yid] = 0
 
-    dfs(xid+1,yid-1)
-    dfs(xid+1,yid)
-    dfs(xid+1,yid+1)
+        dfs(xid,yid-1)
+        dfs(xid,yid+1)
 
-    dfs(xid-1,yid-1)
-    dfs(xid-1,yid)
-    dfs(xid-1,yid+1)
+        dfs(xid+1,yid-1)
+        dfs(xid+1,yid)
+        dfs(xid+1,yid+1)
+
+        dfs(xid-1,yid-1)
+        dfs(xid-1,yid)
+        dfs(xid-1,yid+1)
+
 
 for i in range(len(A)):
     for j in range(len(A[i])):
-        print(i,j)
-        if (i,j)==(0,0):
-            print("IF")
+        if not reached[i][j] and A[i][j]==1:
+            print(f"i,j = {i},{j}")
             dfs(i,j)
             cnt+=1
-        else:
-            print(f"ELSE: {i}, {j}")
-            print(f"A:{A}")
-            if not reached and A[i][j]==1:
-                dfs(i,j)
-                cnt+=1
 
 print(cnt)
+print(A)
+print(reached)
