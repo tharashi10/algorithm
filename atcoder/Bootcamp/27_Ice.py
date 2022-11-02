@@ -1,8 +1,17 @@
 """
 Ice Walk
 方針:
-・深さ優先する
-・
+・普通に苦戦した
+・重要なポイント: 「ここ」と書いた部分
+頭では異なるパスではVisitedを初期化すべきとわかってたけど、
+実装ができなかった。パスが終わるのは、4方向のdfs()が全部完了した後になる。
+
+・重要なポイント: dfsでは基本に習って引数には位置だけを設定したかった。
+けど、おそらくそれだと最終的に問題25のような島のサイズを出すことになっちゃうので、
+位置だけでなく、pointも引数に入れるようにした。
+
+DFSの型はわかった。
+DFS問題は、現時点では時間かかると思うけど、もう少しDFSの問題を練習する(やるなら多分EOP)
 
 Input
 3
@@ -33,44 +42,29 @@ A = []
 for i in range(h):
     A.append(list(map(int,input().split())))
 
-def dfs(x,y):
+cnt = 0
+def dfs(x,y,pts):
     global cnt
+    
+    if cnt < pts:
+        cnt = pts
+    
     if x <0 or x>=h or y <0 or y>=w:
         return
-
-    if visited[x][y] != -1:
-        return
-    
-    visited[x][y]=9
     
     if A[x][y] != 1:
         return
+    
+    A[x][y]=0   #←ここ
+    dfs(x+1,y,pts+1)
+    dfs(x-1,y,pts+1)
+    dfs(x,y-1,pts+1)
+    dfs(x,y+1,pts+1)
+    A[x][y]=1   #←ここ
+    #print(f"pts: {pts}")
 
-    cnt+=1
-    dfs(x+1,y)
-    dfs(x-1,y)
-    dfs(x,y-1)
-    dfs(x,y+1)
-    ll.append(cnt)
-    cnt = 0
+for i in range(w):
+    for j in range(h):
+        dfs(i,j,0)
 
-max_cnt = 0
-for yy in range(w):
-    for xx in range(h):
-        visited = []
-        ll =[]
-        cnt = 0
-        for i in range(h):
-            tmp = []
-            for j in range(w):
-                tmp.append(-1)
-            visited.append(tmp)
-        
-        dfs(xx,yy)
-        if len(ll)!=0:
-            ll_max = max(ll)
-        else:
-            ll_max = 0
-        max_cnt = max(max_cnt,ll_max)
-
-print(max_cnt)
+print(cnt)
