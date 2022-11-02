@@ -70,7 +70,7 @@
 | 25 | How Many Islands? | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=1160&lang=jp | 再帰の上限数を引き上げるべし<br> Listの作成時Immutableになることに留意 |
 | 26 | Ki | https://atcoder.jp/contests/abc138/tasks/abc138_d | 累積和で計算するべし<br>隣接リストAを双方向で保存する |
 | 27 | 薄氷 | https://atcoder.jp/contests/joi2009yo/tasks/joi2009yo_d | 異なるパス毎に計算していく<br>引数に位置だけでなく、スコアも入れる |
-| 28 | AOJ-BFS | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_11_C&lang=ja |  |
+| 28 | AOJ-BFS | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_11_C&lang=ja | 既に訪問済みリストを作る<br>浅い段階でメモした深さが最短を表す |
 | 29 |  |  |  |
 | 30 |  |  |  |
 
