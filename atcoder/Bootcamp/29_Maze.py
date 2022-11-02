@@ -33,14 +33,13 @@ for _ in range(h):
 
 que = [[s_x-1,s_y-1]]
 dist[s_x-1][s_y-1] = 0
-print(f"s_x-1,s_y-1 : {s_x-1,s_y-1}")
-print(A)
+
 def bfs():
     while len(que)!=0:
         v = que.pop(0)
         if v[0]<0 or v[0]>=h or v[1]<0 or v[1]>=w:
             break
-        print(f"v[0],v[1]:{v[0],v[1]}")
+        #print(f"v[0],v[1]:{v[0],v[1]}")
         if A[v[0]][v[1]]=='#':
             break
 
@@ -57,4 +56,4 @@ def bfs():
             dist[x][y] = dist[v[0]][v[1]]+1
             que.append([x,y])
 bfs()
-print(f"dist : {dist}")
+print(dist[g_x-1][g_y-1])
