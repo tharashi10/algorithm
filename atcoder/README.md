@@ -71,9 +71,28 @@
 | 26 | Ki | https://atcoder.jp/contests/abc138/tasks/abc138_d | 累積和で計算するべし<br>隣接リストAを双方向で保存する |
 | 27 | 薄氷 | https://atcoder.jp/contests/joi2009yo/tasks/joi2009yo_d | 異なるパス毎に計算していく<br>引数に位置だけでなく、スコアも入れる |
 | 28 | AOJ-BFS | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_11_C&lang=ja | 既に訪問済みリストを作る<br>浅い段階でメモした深さが最短を表す |
-| 29 | 迷路BFS | https://atcoder.jp/contests/abc007/tasks/abc007_3 |  |
-| 30 |  |  |  |
-
+| 29 | 迷路BFS | https://atcoder.jp/contests/abc007/tasks/abc007_3 | 自力でいける |
+| 30 | Cheese | https://atcoder.jp/contests/joi2011yo/tasks/joi2011yo_e |  |
+| 31 | | | |
+| 32 | | | |
+| 33 | | | |
+| 34 | | | |
+| 35 | | | |
+| 36 | | | |
+| 37 | | | |
+| 38 | | | |
+| 39 | | | |
+| 40 | | | |
+| 41 | | | |
+| 42 | | | |
+| 43 | | | |
+| 44 | | | |
+| 45 | | | |
+| 46 | | | |
+| 47 | | | |
+| 48 | | | |
+| 49 | | | |
+| 50 | | | |
 
 ### Competition
 
@@ -86,7 +105,7 @@
 |------|-------------|-------------|-----|
 | 01   | 2022-10-10~ | 全探索       |  OK |
 | 02   | 2022-10-17~ | 全探索       |  OK |
-| 03   | 2022-10-24~ | 二分探索・DFS  |     |
+| 03   | 2022-10-24~ | 二分探索・DFS |  OK |
 | 04   | 2022-10-31~ | BFS |  |
 | 05   | 2022-11-07~ | 動的計画法 |  |
 | 06   | 2022-11-14~ | 動的計画法 |  |
