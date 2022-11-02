@@ -72,8 +72,8 @@
 | 27 | 薄氷 | https://atcoder.jp/contests/joi2009yo/tasks/joi2009yo_d | 異なるパス毎に計算していく<br>引数に位置だけでなく、スコアも入れる |
 | 28 | AOJ-BFS | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_11_C&lang=ja | 既に訪問済みリストを作る<br>浅い段階でメモした深さが最短を表す |
 | 29 | 迷路BFS | https://atcoder.jp/contests/abc007/tasks/abc007_3 | 自力でいける |
-| 30 | Cheese | https://atcoder.jp/contests/joi2011yo/tasks/joi2011yo_e |  |
-| 31 | | | |
+| 30 | Cheese | https://atcoder.jp/contests/joi2011yo/tasks/joi2011yo_e | 自力でいける |
+| 31 | イルミネーション |https://atcoder.jp/contests/joi2012yo/tasks/joi2012yo_e | |
 | 32 | | | |
 | 33 | | | |
 | 34 | | | |
