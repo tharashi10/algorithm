@@ -74,7 +74,7 @@
 | 29 | 迷路BFS | https://atcoder.jp/contests/abc007/tasks/abc007_3 | 自力でいける |
 | 30 | Cheese | https://atcoder.jp/contests/joi2011yo/tasks/joi2011yo_e | 自力でいける |
 | 31 | イルミネーション |https://atcoder.jp/contests/joi2012yo/tasks/joi2012yo_e | 6方向をきちんと書く<br>周りを0埋めする<br>同じ処理を書かないこと |
-| 32 | | | |
+| 32 | Amazing Mazes | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=1166&lang=jp | |
 | 33 | | | |
 | 34 | | | |
 | 35 | | | |
