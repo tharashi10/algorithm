@@ -76,8 +76,8 @@
 | 31 | イルミネーション |https://atcoder.jp/contests/joi2012yo/tasks/joi2012yo_e | 6方向をきちんと書く<br>周りを0埋めする<br>同じ処理を書かないこと |
 | 32 | Amazing Mazes | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=1166&lang=jp | 縦壁と横壁を作る<br>標準入力は癖あり |
 | 33 | Grid Repainting  | https://atcoder.jp/contests/abc088/tasks/abc088_d | 自力で行けた|
-| 34 | フィボナッチ数列| https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_10_A&lang=ja |  |
-| 35 | | | |
+| 34 | フィボナッチ数列| https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_10_A&lang=ja | 自力で行けた |
+| 35 | Knapsack Problem |https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DPL_1_B&lang=ja | |
 | 36 | | | |
 | 37 | | | |
 | 38 | | | |
