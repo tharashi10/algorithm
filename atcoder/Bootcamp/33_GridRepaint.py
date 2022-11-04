@@ -11,3 +11,9 @@
 --Score--
 2
 """
+h,w = map(int,input().split())
+A = []
+for _ in range(h):
+    st = input()
+    A.append([st[i]for i in range(w)])
+print(A)
