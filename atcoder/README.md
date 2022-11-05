@@ -79,8 +79,8 @@
 | 34 | フィボナッチ数列| https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_10_A&lang=ja | 自力で行けた |
 | 35 | Knapsack Problem |https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DPL_1_B&lang=ja | DP表を書けるかが全て<br>DPは全部で3種類ある<br>1.ナップザックDP<br>2.区間DP<br>3.bit DP|
 | 36 | Knapsack Problem v2| https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DPL_1_C&lang=ja| 一般ナップザックは同一行を参照する |
-| 37 | 最小コインの枚数 | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DPL_1_A&lang=ja |`最小個数部分和問題`というそう |
-| 38 | | | |
+| 37 | 最小コインの枚数 | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DPL_1_A&lang=ja |`最小個数部分和問題`というそう<br>自力できた |
+| 38 | 最長共通部分列　| https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_10_C&lang=ja| |
 | 39 | | | |
 | 40 | | | |
 | 41 | | | |
