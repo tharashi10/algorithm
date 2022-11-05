@@ -4,6 +4,8 @@ Longest Common Subsequence:最長共通部分列
 →[注意]ALDSの問題でサブミットするとTLEになった。
 →想定解法なのでOK
 →もし、どうしても通したい場合はmax関数(遅い)を使わない等する必要あり
+→https://kb84tkhr.hatenablog.com/entry/2018/09/29/225455 
+(Prevの行があればOKなので,dpを1次元配列にして漸化式ステップを行う)
 
 3
 abcbdab
