@@ -78,7 +78,7 @@
 | 33 | Grid Repainting  | https://atcoder.jp/contests/abc088/tasks/abc088_d | 自力で行けた|
 | 34 | フィボナッチ数列| https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_10_A&lang=ja | 自力で行けた |
 | 35 | Knapsack Problem |https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DPL_1_B&lang=ja | DP表を書けるかが全て<br>DPは全部で3種類ある<br>1.ナップザックDP<br>2.区間DP<br>3.bit DP|
-| 36 | Knapsack Problem v2| https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DPL_1_C&lang=ja| |
+| 36 | Knapsack Problem v2| https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DPL_1_C&lang=ja| 一般ナップザックは同一行を参照する |
 | 37 | | | |
 | 38 | | | |
 | 39 | | | |
@@ -94,11 +94,6 @@
 | 49 | | | |
 | 50 | | | |
 
-### Competition
-
-- ABC270
-- ABC271
-
 ### 週ごと
 
 | Week |     Duration    |    Title    | 進捗 |
@@ -113,3 +108,19 @@
 | 08   | 2022-11-28(月)~ | 逆元を使う問題・累積和 |  |
 | 09   | 2022-12-05(月)~ | Union-Find問題 |  |
 | 10   | 2022-12-12(月)~ | 実装問題・数学的な問題 |  |
+
+
+### アルゴリズム整理
+#### ナップザックDP
+- 製品数×最大容量値 のDP表を書く
+- 式
+$$
+dp_{(i+1),(j)} =  
+\left\{
+    \begin{array}{ll}
+    dp_{(i-1),(j-w)}+value_{(i)} & 容量j-w>=0 \\
+    dp_{(i-1),(j)} & Others
+    \end{array}
+\right.
+$$
+
