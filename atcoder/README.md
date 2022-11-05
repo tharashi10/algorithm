@@ -80,8 +80,8 @@
 | 35 | Knapsack Problem |https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DPL_1_B&lang=ja | DP表を書けるかが全て<br>DPは全部で3種類ある<br>1.ナップザックDP<br>2.区間DP<br>3.bit DP|
 | 36 | Knapsack Problem v2| https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DPL_1_C&lang=ja| 一般ナップザックは同一行を参照する |
 | 37 | 最小コインの枚数 | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DPL_1_A&lang=ja |`最小個数部分和問題`というそう<br>自力できた |
-| 38 | 最長共通部分列　| https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_10_C&lang=ja| |
-| 39 | | | |
+| 38 | 最長共通部分列　| https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_10_C&lang=ja| 1次元配列のdpを作ればTLE回避できる |
+| 39 |　1年生 | https://atcoder.jp/contests/joi2011yo/tasks/joi2011yo_d | |
 | 40 | | | |
 | 41 | | | |
 | 42 | | | |
@@ -110,7 +110,7 @@
 | 10   | 2022-12-12(月)~ | 実装問題・数学的な問題 |  |
 
 
-### アルゴリズム整理
+### アルゴリズム基本
 #### ナップザックDP
 - 製品数×最大容量値 のDP表を書く
 - 式
