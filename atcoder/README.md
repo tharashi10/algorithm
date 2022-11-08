@@ -82,7 +82,7 @@
 | 37 | 最小コインの枚数 | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DPL_1_A&lang=ja |`最小個数部分和問題`というそう<br>自力できた |
 | 38 | 最長共通部分列　| https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_10_C&lang=ja| 1次元配列のdpを作ればTLE回避できる |
 | 39 | 1年生 | https://atcoder.jp/contests/joi2011yo/tasks/joi2011yo_d |DP表かけるか |
-| 40 | パスタ |https://atcoder.jp/contests/joi2012yo/tasks/joi2012yo_d |重い...<br>`dp[n][i][j]` <br> SKIP |
+| 40 | パスタ |https://atcoder.jp/contests/joi2012yo/tasks/joi2012yo_d<br>https://atcoder.jp/contests/dp/tasks/dp_c (こちらの問題にすり替え) |重い<br> |
 | 41 | | | |
 | 42 | | | |
 | 43 | | | |
