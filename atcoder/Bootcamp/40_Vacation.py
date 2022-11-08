@@ -2,6 +2,7 @@
 こちらの問題に切り替え
 https://atcoder.jp/contests/dp/tasks/dp_c
 
+自力でACできた
 添え字利用のDP
 3
 10 40 70
@@ -26,11 +27,11 @@ for i in range(n):   # i日目
     for j in range(3): # j=0,1,2
         for k in range(3): # k=0,1,2
             if k != j:
-                print(f"k,j= {k},{j}")
+                #print(f"k,j= {k},{j}")
                 dp[i+1][k] = max(dp[i+1][k], dp[i][j] + A[i][k])
 
-for i in range(n+1):
-    print(*dp[i])
+#for i in range(n+1):
+#    print(*dp[i])
 
-#print(A)
+print(max(dp[n]))
 #print(dp)
