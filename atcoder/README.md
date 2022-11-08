@@ -83,7 +83,7 @@
 | 38 | 最長共通部分列　| https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_10_C&lang=ja| 1次元配列のdpを作ればTLE回避できる |
 | 39 | 1年生 | https://atcoder.jp/contests/joi2011yo/tasks/joi2011yo_d |DP表かけるか |
 | 40 | パスタ |https://atcoder.jp/contests/joi2012yo/tasks/joi2012yo_d<br>https://atcoder.jp/contests/dp/tasks/dp_c (こちらの問題にすり替え) |オリジナルは重い<br>別の類題でAC済み |
-| 41 |暑い日々 | https://atcoder.jp/contests/joi2013yo/tasks/joi2013yo_d| 初期条件の設定を誤らないこと<br>同じ服が続いてもOK |
+| 41 |暑い日々 | https://atcoder.jp/contests/joi2013yo/tasks/joi2013yo_d| 初期条件の設定を誤らないこと<br>同じ服が続いてもOK<br>自力でいける |
 | 42 | シルクロード| https://atcoder.jp/contests/joi2015yo/tasks/joi2015yo_d| |
 | 43 | | | |
 | 44 | | | |
