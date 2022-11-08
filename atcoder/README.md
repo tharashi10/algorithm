@@ -23,7 +23,7 @@
 | 07 | 幅優先探索 | OK |
 | 08 | 動的計画法：ナップザック DP | OK |
 | 09 | 動的計画法：区間 DP | OK |
-| 10 | 動的計画法：bit DP ||
+| 10 | 動的計画法：bit DP | OK |
 | 11 | 動的計画法：その他 ||
 | 12 | 最短経路問題：ダイクストラ法 ||
 | 13 | 最短経路問題：ワーシャルフロイド法 ||
@@ -83,7 +83,7 @@
 | 38 | 最長共通部分列　| https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_10_C&lang=ja| 1次元配列のdpを作ればTLE回避できる |
 | 39 | 1年生 | https://atcoder.jp/contests/joi2011yo/tasks/joi2011yo_d |DP表かけるか |
 | 40 | パスタ |https://atcoder.jp/contests/joi2012yo/tasks/joi2012yo_d<br>https://atcoder.jp/contests/dp/tasks/dp_c (こちらの問題にすり替え) |オリジナルは重い<br>別の類題でAC済み |
-| 41 | | | |
+| 41 |暑い日々 | https://atcoder.jp/contests/joi2013yo/tasks/joi2013yo_d| |
 | 42 | | | |
 | 43 | | | |
 | 44 | | | |
@@ -101,7 +101,7 @@
 | 01   | 2022-10-10(月)~ | 全探索       |  OK |
 | 02   | 2022-10-17(月)~ | 全探索       |  OK |
 | 03   | 2022-10-24(月)~ | 二分探索・DFS |  OK |
-| 04   | 2022-10-31(月)~ | BFS |  |
+| 04   | 2022-10-31(月)~ | BFS | OK |
 | 05   | 2022-11-07(月)~ | 動的計画法 |  |
 | 06   | 2022-11-14(月)~ | 動的計画法 |  |
 | 07   | 2022-11-21(月)~ | ダイクストラ・ワーシャルフロイド・最小全域木問題 |  |
