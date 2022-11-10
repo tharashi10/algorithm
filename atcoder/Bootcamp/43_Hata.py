@@ -30,11 +30,11 @@ for flg in range(5):
     tmp_ini.append(A[flg][1])
 
 clist = ['R','B','W']
+
 # 初期条件
-for s in set(clist):
-    dp[0][1] = 5-tmp_ini.count(s)
-    dp[1][1] = 5-tmp_ini.count(s)
-    dp[2][1] = 5-tmp_ini.count(s)
+dp[0][1] = 5-tmp_ini.count(clist[0])
+dp[1][1] = 5-tmp_ini.count(clist[1])
+dp[2][1] = 5-tmp_ini.count(clist[2])
 
 for i in range(2,N+1):
     tmp_i = []
