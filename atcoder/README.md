@@ -88,7 +88,7 @@
 | 43 | パ研軍旗 | https://atcoder.jp/contests/pakencamp-2019-day3/tasks/pakencamp_2019_day3_d | dict使ったが剰余%使えるとNice<br>無限大=`10**10`とするべし |
 | 44 | ポロック予想 | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=1167&lang=jp | 重複OKな動的計画法 |
 | 45 | 差分パルス符号変調 | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=2199&lang=jp| |
-| 46 | | | |
+| 46 | 連鎖行列積 | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_10_B&lang=ja | |
 | 47 | | | |
 | 48 | | | |
 | 49 | | | |
