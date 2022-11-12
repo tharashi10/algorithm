@@ -86,8 +86,8 @@
 | 41 |暑い日々 | https://atcoder.jp/contests/joi2013yo/tasks/joi2013yo_d| 初期条件の設定を誤らないこと<br>同じ服が続いてもOK<br>自力でいける |
 | 42 | シルクロード| https://atcoder.jp/contests/joi2015yo/tasks/joi2015yo_d| dp表を書く。<br>書ければいける。<br>無限大=`10**10`とするべし |
 | 43 | パ研軍旗 | https://atcoder.jp/contests/pakencamp-2019-day3/tasks/pakencamp_2019_day3_d | dict使ったが剰余%使えるとNice<br>無限大=`10**10`とするべし |
-| 44 | ポロック予想 | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=1167&lang=jp | |
-| 45 | | | |
+| 44 | ポロック予想 | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=1167&lang=jp | 重複OKな動的計画法 |
+| 45 | 差分パルス符号変調 | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=2199&lang=jp| |
 | 46 | | | |
 | 47 | | | |
 | 48 | | | |
