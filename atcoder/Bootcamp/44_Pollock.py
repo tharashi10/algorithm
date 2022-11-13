@@ -75,3 +75,33 @@ while True:
     if n==0:
         break
     print(f"{dp[n]} {odd[n]}")
+
+""" Ref
+base=[i*(i+1)*(i+2)//6 for i in range(2,181)]
+odd_base=[i for i in base if i%2==1]
+
+def pollock(base):
+    dp=list(range(10**6))
+    for i in base:
+        for j in range(i,10**6):
+            if dp[j]>dp[j-i]+1:
+                dp[j]=dp[j-i]+1
+    return dp
+
+l1=pollock(base)
+l2=pollock(odd_base)
+
+def main(l):
+    for i in l:
+        print(l1[i],l2[i])
+
+if __name__=="__main__":
+    l=[]
+    for _ in range(10**6):
+        i=int(input())
+        if i==0:
+            break
+        l.append(i)
+    main(l)
+    exit()
+"""
