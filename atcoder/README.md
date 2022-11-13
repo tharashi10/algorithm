@@ -87,10 +87,10 @@
 | 42 | シルクロード| https://atcoder.jp/contests/joi2015yo/tasks/joi2015yo_d| dp表を書く。<br>書ければいける。<br>無限大=`10**10`とするべし |
 | 43 | パ研軍旗 | https://atcoder.jp/contests/pakencamp-2019-day3/tasks/pakencamp_2019_day3_d | dict使ったが剰余%使えるとNice<br>無限大=`10**10`とするべし |
 | 44 | ポロック予想 | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=1167&lang=jp | 重複OKな動的計画法 |
-| 45 | 差分パルス符号変調 | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=2199&lang=jp| |
+| 45 | 差分パルス符号変調 | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=2199&lang=jp| `dp[i][j]`: i番目の入力信号で、複合後の出力信号がjとなる時の、二乗和の最小と定義する |
 | 46 | 連鎖行列積 | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_10_B&lang=ja | |
 | 47 | ケーキ切り分け | https://atcoder.jp/contests/joi2015ho/tasks/joi2015ho_b| |
-| 48 | だるま落とし| https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=1611&lang=jp | |
+| 48 | だるま落とし| https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=1611&lang=jp | `dp[l][r]` とおく<br>区間の状態をDPで表す|
 | 49 | | | |
 | 50 | | | |
 
