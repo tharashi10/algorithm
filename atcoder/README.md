@@ -89,8 +89,8 @@
 | 44 | ポロック予想 | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=1167&lang=jp | 重複OKな動的計画法 |
 | 45 | 差分パルス符号変調 | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=2199&lang=jp| |
 | 46 | 連鎖行列積 | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_10_B&lang=ja | |
-| 47 | | | |
-| 48 | | | |
+| 47 | ケーキ切り分け | https://atcoder.jp/contests/joi2015ho/tasks/joi2015ho_b| |
+| 48 | だるま落とし| https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=1611&lang=jp | |
 | 49 | | | |
 | 50 | | | |
 
