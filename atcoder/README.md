@@ -89,9 +89,9 @@
 | 44 | ポロック予想 | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=1167&lang=jp | 重複OKな動的計画法 |
 | 45 | 差分パルス符号変調 | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=2199&lang=jp| `dp[i][j]`: i番目の入力信号で、複合後の出力信号がjとなる時の、二乗和の最小と定義する |
 | 46 | 連鎖行列積 | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_10_B&lang=ja | 基本問題だけどむずかった<br>kでのレンジをdiffで終了と開始の差分にしないと計算一生合わない|
-| 47 | ケーキ切り分け | https://atcoder.jp/contests/joi2015ho/tasks/joi2015ho_b| じっくりもう一回トライしたい |
+| 47 | ケーキ切り分け | https://atcoder.jp/contests/joi2015ho/tasks/joi2015ho_b| じっくりもう一回トライしたい(C++で) |
 | 48 | だるま落とし| https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=1611&lang=jp | `dp[l][r]` とおく<br>区間の状態をDPで表す|
-| 49 |　巡回セールスマン | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DPL_2_A&lang=ja | |
+| 49 |巡回セールスマン | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DPL_2_A&lang=ja | |
 | 50 | | | |
 
 ### 週ごと
