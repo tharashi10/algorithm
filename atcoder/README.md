@@ -91,7 +91,7 @@
 | 46 | 連鎖行列積 | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_10_B&lang=ja | 基本問題だけどむずかった<br>kでのレンジをdiffで終了と開始の差分にしないと計算一生合わない|
 | 47 | ケーキ切り分け | https://atcoder.jp/contests/joi2015ho/tasks/joi2015ho_b| じっくりもう一回トライしたい |
 | 48 | だるま落とし| https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=1611&lang=jp | `dp[l][r]` とおく<br>区間の状態をDPで表す|
-| 49 | | | |
+| 49 |　巡回セールスマン | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DPL_2_A&lang=ja | |
 | 50 | | | |
 
 ### 週ごと
