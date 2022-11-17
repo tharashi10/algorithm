@@ -1,5 +1,8 @@
 """
 巡回セールスマン問題(Traveling Salesman: TSP)
+理論を理解し、再帰DPでトライしたが、どうしても合わないので、
+ボトムアップでやる。再帰DPも頭を冷やしてまたやる。
+
 https://cnc-selfbuild.blogspot.com/2019/05/tsp-dp.html
 集合はsetでもOKぽいが、intで2進数のbitでやるのがメインアプローチぽいので
 それでやってみる
@@ -21,6 +24,31 @@ dp[S][v]:=頂点0からスタートして、
 3 2 4
 --Output--
 16
+"""
+import sys
+
+V, E = map(int,input().split())
+G = [[float('inf')]*V for i in range(V)]
+for i in range(E):
+    s,t,d = map(int,input().split())
+    G[s][t] = d
+
+dp = [[float('inf')]*V for i in range(1<<V)]
+dp[0][0] = 0
+
+for S in range(1<<V): # Sは集合をbitで表している
+    for v in range(V): # vは配られる側の要素を表している
+        for u in range(V): # uは配る側の要素を表している
+            if not (S >> u) & 1 and S != 0:
+                continue
+            if (S >> v) & 1 == 0:
+                if dp[S][u] + G[u][v] < dp[S|(1 << v)][v]: # | はOR演算子
+                    dp[S | (1 << v)][v] = dp[S][u] + G[u][v] # 更新
+
+if dp[(1<<V)-1][0] != float('inf'):
+    print(dp[(1<<V)-1][0])
+else:
+    print(-1)
 """
 import sys
 sys.setrecursionlimit(20000)
@@ -71,3 +99,4 @@ print(ans)
 
 for i in range(4):
     print(*dist[i])
+"""
