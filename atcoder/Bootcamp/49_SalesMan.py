@@ -13,11 +13,13 @@
 """
 import sys
 sys.setrecursionlimit(20000)
+
 def rec(bit:int, v:int):
-    if dp[bit][v]!=-1:      # (A) 既に探索済みなら
+    if dp[bit][v]!='-':      # (A) 既に探索済みなら
         return dp[bit][v]
     
     if bit==(1<<v) : # (B) 初期値 集合S={1}のような場合に相当
+        print(f"bit={bit},v={v}")
         dp[bit][v] = 0
         return 0
     
@@ -31,27 +33,28 @@ def rec(bit:int, v:int):
             res = rec(prev_bit,u) + dist[u][v]
     
     dp[bit][v]=res
-    return res
+    return dp[bit][v]
 
 n,m=map(int,input().split())
 dist=[]
 INF=float('inf')
-for i in range(m):
-    dist.append([0 for _ in range(10)])
+for i in range(n):
+    dist.append([0 for _ in range(n)])
 
 for i in range(m):
     sid,eid,d=map(int,input().split())
     dist[sid][eid]=d
 
-
 dp=[]
-for i in range(20):
-    dp.append([-1 for _ in range(20)])
+for i in range(30): # 4桁なら1111 = 15
+    dp.append(['-' for _ in range(10)])
 
 ans = INF
-for v in range(n):
-    ans = min(ans,rec((1<<n)-1,v))
+#for v in range(1):
+#    ans = min(ans,rec((1<<n)-1,v)) # (1<<n)-1= 1, 11, 111, 1111, 11111
 
+ans = rec((1<<n)-1,0)
 print(ans)
+print(dist)
 for i in range(20):
     print(*dp[i])
