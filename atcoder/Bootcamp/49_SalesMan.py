@@ -27,30 +27,31 @@ sys.setrecursionlimit(20000)
 
 # int bit, int v
 def rec(bit, v):
-    if dp[bit][v]!='-':      # (A) 既に探索済みならメモ値を返す
+    if dp[bit][v]!=-1:      # (A) 既に探索済みならメモ値を返す
         return dp[bit][v]
 
-    #if bit==0:
-    #    return 0
-    
-    #if bit==(1<<v):          # (B) 初期値 集合S={1}のような場合に相当
-    #    print(f"bit={bit},v={v}")
-    #    dp[bit][v] = 0
-    #    return 0
+    if bit==0:
+        if v==0:
+            return 0
+        else:
+            return INF
     
     res=INF
-    prev_bit = bit & ~(1<<v) # bit{1,2,3}の時にv=1だとしたら、{2,3}としてprev_bitを決める
-    print(f"prev_bit: {prev_bit}")
+    #prev_bit = bit & ~(1<<v) # bit{1,2,3}の時にv=1だとしたら、{2,3}としてprev_bitを決める
+    
     for u in range(n):  #(C) 更新の条件
-        if (not (prev_bit & (1<<u))): 
+        if u==v: continue
+        prev_bit = bit & ~(1<<u)
+        if (not (prev_bit & (1<<u))):
             continue # uが集合に含まれてなければ
-
-        if (res > rec(prev_bit,u) + dist[u][v]):
-            res = rec(prev_bit,u) + dist[u][v]
+        
+        print(f"***** u,bit,v = {u},{bit},{v} *****")
+        res = min(res, rec(prev_bit,u)+dist[u][v])
     
     dp[bit][v]=res
-    return dp[bit][v]
+    return res
 
+# ---
 n,m=map(int,input().split())
 dist=[]
 INF=float('inf')
@@ -63,15 +64,10 @@ for i in range(m):
 
 dp=[]
 for i in range((1<<6)+1): # dpテーブルは余裕をもったサイズにする
-    dp.append(['-' for _ in range(10)])
-
-dp[0][0]=0
-ans = INF
-##for v in range(1):
-#    ans = min(ans,rec((1<<n)-1,v)) # (1<<n)-1= 1, 11, 111, 1111, 11111
+    dp.append([-1 for _ in range(20)])
 
 ans = rec((1<<n)-1,0)
 print(ans)
 
-for i in range(20):
-    print(*dp[i])
+for i in range(4):
+    print(*dist[i])
