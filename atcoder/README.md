@@ -91,8 +91,28 @@
 | 46 | 連鎖行列積 | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_10_B&lang=ja | 基本問題だけどむずかった<br>kでのレンジをdiffで終了と開始の差分にしないと計算一生合わない|
 | 47 | ケーキ切り分け | https://atcoder.jp/contests/joi2015ho/tasks/joi2015ho_b| じっくりもう一回トライしたい(C++で) |
 | 48 | だるま落とし| https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=1611&lang=jp | `dp[l][r]` とおく<br>区間の状態をDPで表す|
-| 49 |巡回セールスマン | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DPL_2_A&lang=ja | |
-| 50 | | | |
+| 49 |巡回セールスマン | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DPL_2_A&lang=ja | 再帰DPはうまくいかなかった<br>ボトムアップで理解 |
+| 50 | 無向TSP | https://atcoder.jp/contests/s8pc-1/tasks/s8pc_1_g | |
+| 51 |        |        | |
+| 52 |        |        | |
+| 53 |        |        | |
+| 54 |        |        | |
+| 55 |        |        | |
+| 56 |        |        | |
+| 57 |        |        | |
+| 58 |        |        | |
+| 59 |        |        | |
+| 60 |        |        | |
+| 61 |        |        | |
+| 62 |        |        | |
+| 63 |        |        | |
+| 64 |        |        | |
+| 65 |        |        | |
+| 66 |        |        | |
+| 67 |        |        | |
+| 68 |        |        | |
+| 69 |        |        | |
+| 70 |        |        | |
 
 ### 週ごと
 
