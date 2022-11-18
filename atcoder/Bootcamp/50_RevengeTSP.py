@@ -41,3 +41,51 @@ for S in range(1<<V):
 
 if dp[(1<<V)-1][0] != float('inf'):
     print(dp[(1<<V)-1][0])
+
+
+
+
+"""
+def tsp(N, M, G, start=0):
+    dp = [[float("inf")] * N for _ in range(1 << N)]
+    dp[0][start] = 0
+    ep = [[0] * N for _ in range(1 << N)]
+    ep[0][start] = 1
+    for V in range(1 << N):
+        for u in range(N):
+            for v, w, t in G[u]:
+                if (V >> v) & 1 == 0 and dp[V][u] + w <= t:
+                    if dp[V][u] + w < dp[V | (1 << v)][v]:
+                        dp[V | (1 << v)][v] = dp[V][u] + w
+                        ep[V | (1 << v)][v] = ep[V][u]
+                    elif dp[V][u] + w == dp[V | (1 << v)][v]:
+                        ep[V | (1 << v)][v] += ep[V][u]
+
+    ans1 = dp[(1 << N) - 1][start]
+    if ans1 == float("inf"):
+        ans1 = -1
+    ans2 = ep[(1 << N) - 1][start]
+
+    return ans1, ans2
+
+
+def main():
+    N, M = map(int, input().split())
+    G = [[] for _ in range(N)]
+    for _ in range(M):
+        u, v, w, t = map(int, input().split())
+        u -= 1
+        v -= 1
+        G[u].append((v, w, t))
+        G[v].append((u, w, t))
+
+    ans1, ans2 = tsp(N, M, G)
+    if ans1 == -1:
+        print("IMPOSSIBLE")
+    else:
+        print(ans1, ans2)
+
+
+if __name__ == "__main__":
+    main()
+"""
