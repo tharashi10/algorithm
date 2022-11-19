@@ -96,7 +96,7 @@
 | 51 | 部活のスケジュール| https://atcoder.jp/contests/joi2014yo/tasks/joi2014yo_d | 自力で実装できた<br>2進数は111的な感じで書き殴るべし<br>dp[S][i]ではなく、dp[JOI][i日目]のようにメモには書くべし|
 | 52 | ぬいぐるみの整理 | https://atcoder.jp/contests/joi2017yo/tasks/joi2017yo_d |SKIPすることとする<br>bitDP理解したい |
 | 53 | 最長増加連続部分列 | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DPL_1_D&lang=ja | |
-| 54 |  |  | |
+| 54 | トランプ挿入ソート | https://atcoder.jp/contests/abc006/tasks/abc006_4 | |
 | 55 |  |  | |
 | 56 |  |  | |
 | 57 |  |  | |
