@@ -93,8 +93,8 @@
 | 48 | だるま落とし| https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=1611&lang=jp | `dp[l][r]` とおく<br>区間の状態をDPで表す|
 | 49 |巡回セールスマン | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DPL_2_A&lang=ja | 再帰DPはうまくいかなかった<br>ボトムアップで理解 |
 | 50 | 無向TSP | https://atcoder.jp/contests/s8pc-1/tasks/s8pc_1_g | こちらもボトムアップで<br>経路用のep表も作る |
-| 51 | 部活のスケジュール| https://atcoder.jp/contests/joi2014yo/tasks/joi2014yo_d | |
-| 52 |  |  | |
+| 51 | 部活のスケジュール| https://atcoder.jp/contests/joi2014yo/tasks/joi2014yo_d | 自力で実装できた<br>2進数は111的な感じで書き殴るべし<br>dp[S][i]ではなく、dp[JOI][i日目]のようにメモには書くべし|
+| 52 | ぬいぐるみの整理 | https://atcoder.jp/contests/joi2017yo/tasks/joi2017yo_d | |
 | 53 |  |  | |
 | 54 |  |  | |
 | 55 |  |  | |
