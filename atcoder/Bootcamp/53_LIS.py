@@ -1,6 +1,7 @@
 """
 Longest Increasing Subsequence
 LIS[i]:= 長さ i の単調増加部分列の右端の数字のうち、最小の値
+https://kyoroid.github.io/algorithm/dynamic_programming/lis.html
 5
 5
 1
