@@ -97,8 +97,8 @@
 | 52 | ぬいぐるみの整理 | https://atcoder.jp/contests/joi2017yo/tasks/joi2017yo_d |SKIPすることとする<br>bitDP理解したい |
 | 53 | 最長増加連続部分列 | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DPL_1_D&lang=ja | bisect<br>公式的にInputしておく |
 | 54 | トランプ挿入ソート | https://atcoder.jp/contests/abc006/tasks/abc006_4 | bisect　|
-| 55 |色塗り| https://atcoder.jp/contests/abc134/tasks/abc134_e | |
-| 56 |  |  | |
+| 55 |色塗り| https://atcoder.jp/contests/abc134/tasks/abc134_e |「LIS の双対問題」<br> 入力配列AをA[::-1]で逆順にする |
+| 56 | ダイクストラ | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=GRL_1_A&lang=ja | |
 | 57 |  |  | |
 | 58 |  |  | |
 | 59 |  |  | |
