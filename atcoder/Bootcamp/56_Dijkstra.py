@@ -1,5 +1,15 @@
 """
+単一最短経路
+記事見たけど、普通にTLEするものが多い.
+以下の記事は有用.
+https://note.com/omotiti/n/n161899ff99b6
 
+3つ用意する
+・cost {}: (from,to):distance の辞書マスタ <-- 2d arrayでやるとTLEになる
+・dist []: 累積の距離 初期値は全て INF
+・hq = [tuple()] : tuple(tmp_dist,node)
+
+---
 Input()
 4 5 0
 0 1 1
@@ -16,30 +26,33 @@ Input()
 import heapq
 
 def dijkstra(s):
-    cost = [float('inf')]*V
-    cost[s] = 0
-    
     hq = [(0,s)]
-    heapq.heapify(hq)
-
     while hq:
-        cst,v = heapq.heappop(hq)
-        if cost[v] < cst:
-            continue
-        for d,u in G[v]:
-            tmp = d + cost[v]
-            if tmp < cost[u]:
-                cost[u] = tmp
-                heapq.heappush(hq,(tmp,u))
-    return cost
+        cst, now = heapq.heappop(hq)
+        for next in G[now]:
+            tmp = cst + cost[(now,next)]
+            if tmp < dist[next]:
+                dist[next] = tmp
+                heapq.heappush(hq,(tmp,next))
+    return dist
 
 if __name__ == '__main__':
     V,E,r = map(int,input().split())
     G = [[] for _ in range(V)]
+    INF = 10**10
+    cost = {}
+    dist = [INF]*V
+    dist[r]=0
+
     for i in range(E):
         s,t,d = map(int,input().split())
-        G[s].append((d,t))  # [[(1, 1), (2, 4)], [(2, 2), (3, 5)], [(3, 1)]]
+        G[s].append(t)
+        cost[(s,t)]=d
     
-    ans = dijkstra(0)
-    for k in range(len(ans)):
-        print(ans[k])
+    ans = dijkstra(r)
+    for i in range(V):
+        if ans[i]==INF:
+            print("INF")
+        else:
+            print(ans[i])
+    
