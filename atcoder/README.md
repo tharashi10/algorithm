@@ -101,7 +101,7 @@
 | 56 | ダイクストラ | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=GRL_1_A&lang=ja | Priority Queue<br>cost{}(=adj),dist[], hq[(tuple)]を用意|
 | 57 | 船旅 | https://atcoder.jp/contests/joi2008yo/tasks/joi2008yo_f  | |
 | 58 | ゾンビ島 | https://atcoder.jp/contests/joi2016yo/tasks/joi2016yo_e | |
-| 59 |  |  | |
+| 59 | Taxi | https://atcoder.jp/contests/joi2014yo/tasks/joi2014yo_e | |
 | 60 |  |  | |
 | 61 |  |  | |
 | 62 |  |  | |
