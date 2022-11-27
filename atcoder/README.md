@@ -26,7 +26,7 @@
 | 10 | 動的計画法：bit DP | OK |
 | 11 | 動的計画法：その他 | OK |
 | 12 | 最短経路問題：ダイクストラ法 | OK |
-| 13 | 最短経路問題：ワーシャルフロイド法 ||
+| 13 | 最短経路問題：ワーシャルフロイド法 | OK |
 | 14 | 最小全域木問題 ||
 | 15 | 高速な素数判定法 ||
 | 16 | 高速なべき乗計算 ||
@@ -98,7 +98,7 @@
 | 53 | 最長増加連続部分列 | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DPL_1_D&lang=ja | bisect<br>公式的にInputしておく |
 | 54 | トランプ挿入ソート | https://atcoder.jp/contests/abc006/tasks/abc006_4 | bisect　|
 | 55 |色塗り| https://atcoder.jp/contests/abc134/tasks/abc134_e |「LIS の双対問題」<br> 入力配列AをA[::-1]で逆順にする |
-| 56 | ダイクストラ | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=GRL_1_A&lang=ja | Priority Queue<br>cost{}(=adj),dist[], hq[(tuple)]を用意|
+| 56 | ダイクストラ | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=GRL_1_A&lang=ja | Priority Queue<br>cost{}(=adj),dist[], hq[(tuple)]を用意 |
 | 57 | 船旅 | https://atcoder.jp/contests/joi2008yo/tasks/joi2008yo_f | 56と同じ |
 | 58 | ゾンビ島 | https://atcoder.jp/contests/joi2016yo/tasks/joi2016yo_e | |
 | 59 | Taxi | https://atcoder.jp/contests/joi2014yo/tasks/joi2014yo_e | |
