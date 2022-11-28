@@ -43,19 +43,20 @@ def main():
     C = [int(input()) for i in range(K)]
     G = [[] for _ in range(V+1)]
 
-    dic = {}
-    INF = 10**10
+    INF = 10**20
 
     for _ in range(E):
         s,t = map(int,input().split())
         G[s].append(t)
         G[t].append(s)
     
-    # bfs part
+    dist = [-1]*(V+1)
     for c in C:
-        que = [c]
-        dist = [-1]*(V+1)
         dist[c] = 0
+    
+    # BFS part
+    for z in C:
+        que = [z]
         while len(que)!=0:
             vid = que.pop(0)
             for v in G[vid]:
@@ -78,8 +79,7 @@ def main():
     ans = dijkstra(start, G, sum_dist, danger, P, Q, C)
 
     if ans[goal] != INF:
-        print(ans)
-        print(C)
+        print(ans[goal])
     else:
         print(f"-1")
 
@@ -90,8 +90,9 @@ def dijkstra(s,G,sum_dist,danger,P,Q,C):
         for next in G[now]:
             if next in C:
                 continue
-            
-            if next in danger:
+            if next == (len(G)-1):
+                tmp = cost
+            elif next in danger:
                 tmp = cost + Q
             else:
                 tmp = cost + P
