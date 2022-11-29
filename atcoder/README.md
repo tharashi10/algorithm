@@ -1,8 +1,9 @@
 # 100問チャレンジ
 ### 作成日
 - 2022-10-11
-- ![SPM is supported](https://img.shields.io/badge/SPM-Supported-orange)
+- ![AtCoder](https://img.shields.io/badge/atcoder-atcoder-orange)
 - ![reposize](https://img.shields.io/github/repo-size/tharashi10/terraform)
+- ![Python](https://img.shields.io/badge/python-3.5%20%7C%203.6%20%7C%203.7-blue)
 
 ### 目的
 - AtCoderで自信持ってC/D問題を解けるようにする
