@@ -103,7 +103,7 @@
 | 58 | ゾンビ島 | https://atcoder.jp/contests/joi2016yo/tasks/joi2016yo_e | BFS + Dijkstra<br> 2Testcase/5 時間あれば改良|
 | 59 | Taxi | https://atcoder.jp/contests/joi2014yo/tasks/joi2014yo_e | BFS+Dijkstra<br>PythonだとTLEになる<br> ACしたいならC++で |
 | 60 | 全点対間最短経路 | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=GRL_1_C&lang=ja | ワーシャルフロイドがわかってしまえば簡単<br>dp3重ループでお終い |
-| 61 |  |  | |
+| 61 | バスと避けられない運命 | https://atcoder.jp/contests/abc012/tasks/abc012_4 | |
 | 62 |  |  | |
 | 63 |  |  | |
 | 64 |  |  | |
