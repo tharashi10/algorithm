@@ -102,7 +102,7 @@
 | 57 | 船旅 | https://atcoder.jp/contests/joi2008yo/tasks/joi2008yo_f | 56と同じ |
 | 58 | ゾンビ島 | https://atcoder.jp/contests/joi2016yo/tasks/joi2016yo_e | BFS + Dijkstra<br> 2Testcase/5 時間あれば改良|
 | 59 | Taxi | https://atcoder.jp/contests/joi2014yo/tasks/joi2014yo_e | |
-| 60 | 全点対間最短経路 | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=GRL_1_C&lang=ja | |
+| 60 | 全点対間最短経路 | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=GRL_1_C&lang=ja | ワーシャルフロイドがわかってしまえば簡単<br>dp3重ループでお終い |
 | 61 |  |  | |
 | 62 |  |  | |
 | 63 |  |  | |
@@ -124,10 +124,11 @@
 | 04   | 2022-10-31(月)~ | BFS | OK |
 | 05   | 2022-11-07(月)~ | 動的計画法 | OK |
 | 06   | 2022-11-14(月)~ | 動的計画法 | OK |
-| 07   | 2022-11-21(月)~ | ダイクストラ・ワーシャルフロイド・最小全域木問題 | リスケ(扁桃腺) |
-| 08   | 2022-11-28(月)~ | 逆元を使う問題・累積和 |  |
-| 09   | 2022-12-05(月)~ | Union-Find問題 |  |
-| 10   | 2022-12-12(月)~ | 実装問題・数学的な問題 |  |
+| 07   | 2022-11-21(月)~ | --- | リスケ(Covid) |
+| 08   | 2022-11-28(月)~ | ダイクストラ・ワーシャルフロイド・最小全域木問題 |  |
+| 09   | 2022-12-05(月)~ | 逆元を使う問題・累積和 |  |
+| 10   | 2022-12-12(月)~ | Union-Find問題 |  |
+| 11   | 2022-12-19(月)~ | 実装問題・数学的な問題 |  |
 
 
 ### アルゴリズム基本
