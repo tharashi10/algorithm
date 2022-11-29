@@ -101,7 +101,7 @@
 | 56 | ダイクストラ | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=GRL_1_A&lang=ja | Priority Queue<br>cost{}(=adj),dist[], hq[(tuple)]を用意 |
 | 57 | 船旅 | https://atcoder.jp/contests/joi2008yo/tasks/joi2008yo_f | 56と同じ |
 | 58 | ゾンビ島 | https://atcoder.jp/contests/joi2016yo/tasks/joi2016yo_e | BFS + Dijkstra<br> 2Testcase/5 時間あれば改良|
-| 59 | Taxi | https://atcoder.jp/contests/joi2014yo/tasks/joi2014yo_e | |
+| 59 | Taxi | https://atcoder.jp/contests/joi2014yo/tasks/joi2014yo_e | BFS+Dijkstra<br>PythonだとTLEになる<br> ACしたいならC++で |
 | 60 | 全点対間最短経路 | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=GRL_1_C&lang=ja | ワーシャルフロイドがわかってしまえば簡単<br>dp3重ループでお終い |
 | 61 |  |  | |
 | 62 |  |  | |
