@@ -6,6 +6,12 @@
 →クラスカル実装で出てくるUnion-Findはこちら
 (https://atcoder.jp/contests/atc001/tasks/unionfind_a)
 
+ポイント
+・木の数がK個になったらBreakする部分
+→Kは本選会場と同じ意味であり、最初は0個ではなく、
+クラスカル(Kruscal)法でエッジを張っていくので、最初はV本。(みんなバラバラ)
+最終的に、木のグループがK個になればそこで、Kruscal法のForループを止める
+
 行けた
 4 3 1
 1 2 2
