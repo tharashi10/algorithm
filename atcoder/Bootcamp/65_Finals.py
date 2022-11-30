@@ -6,6 +6,7 @@
 →クラスカル実装で出てくるUnion-Findはこちら
 (https://atcoder.jp/contests/atc001/tasks/unionfind_a)
 
+行けた
 4 3 1
 1 2 2
 2 3 9
@@ -51,19 +52,23 @@ def main():
         s,t,c = map(int,input().split())
         G.append((c,s,t))
 
+    count_tree = V #初期状態はノードがバラバラなのでV
     par = [i for i in range(V+1)]
     G.sort()
     ans = 0
-    edge_cnt = 0
+    
     for c,u,v in G:
-        edge_cnt+=1
+        if count_tree==K:
+            break
         if not same(u,v):
             unite(u,v)
             ans+=c
-            if edge_cnt>=V-K:
-                break
+            count_tree-=1
     
-    print(ans)
+    if K==V:
+        print(0)
+    else:
+        print(ans)
 
 
 if __name__=="__main__":
