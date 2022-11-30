@@ -2,8 +2,8 @@
 本選会場
 黙ってPrim法で解いてみる.
 →K個の会場として、切りたいが、答えが合わないので、
-クラシカル法に切り替える
-→クラシカル実装で出てくるUnion-Findはこちら
+クラスカル法に切り替える
+→クラスカル実装で出てくるUnion-Findはこちら
 (https://atcoder.jp/contests/atc001/tasks/unionfind_a)
 
 4 3 1
@@ -19,6 +19,7 @@
 2 5 7
 3 4 6
 4 5 5
+12
 """
 
 def main():
@@ -63,7 +64,7 @@ def main():
                 break
     
     print(ans)
-    
+
 
 if __name__=="__main__":
     main()
