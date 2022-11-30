@@ -106,8 +106,8 @@
 | 60 | 全点対間最短経路 | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=GRL_1_C&lang=ja | ワーシャルフロイドがわかってしまえば簡単<br>dp3重ループでお終い |
 | 61 | バスと避けられない運命 | https://atcoder.jp/contests/abc012/tasks/abc012_4 | 黙ってワーシャルフロイド書く<br>TLEするのでC++でやりましょう |
 | 62 | Wall | https://atcoder.jp/contests/abc079/tasks/abc079_d |　黙ってワーシャルフロイド書く |
-| 63 | 道の修復 | https://atcoder.jp/contests/abc074/tasks/arc083_b | |
-| 64 |  |  | |
+| 63 | 道の修復 | https://atcoder.jp/contests/abc074/tasks/arc083_b | TLEになる<br>時間あれば再度Cppでやる |
+| 64 | 最小全域木 | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=GRL_2_A&lang=ja | |
 | 65 |  |  | |
 | 66 |  |  | |
 | 67 |  |  | |
