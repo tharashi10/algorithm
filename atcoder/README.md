@@ -1,4 +1,4 @@
-# 100問チャレンジ
+# 100 Challenge
 ### 作成日
 - 2022-10-11
 - ![AtCoder](https://img.shields.io/badge/atcoder-atcoder-orange)
