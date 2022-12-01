@@ -30,7 +30,7 @@
 | 13 | 最短経路問題：ワーシャルフロイド法 | OK |
 | 14 | 最小全域木問題 | OK |
 | 15 | 高速な素数判定法 | OK |
-| 16 | 高速なべき乗計算 ||
+| 16 | 高速なべき乗計算 | OK |
 | 17 | 逆元を使う問題 ||
 | 18 | 累積和 ||
 | 19 | 累積和: いもす法 ||
@@ -110,8 +110,8 @@
 | 64 | 最小全域木 | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=GRL_2_A&lang=ja | Prim法で優先度キューすればいける |
 | 65 | 本選会場 | https://atcoder.jp/contests/joisc2010/tasks/joisc2010_finals | Union-FindでのKruscal法|
 | 66 | 宇宙ステーション | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=1127 | N=1に注意 |
-| 67 | Built? | https://atcoder.jp/contests/abc065/tasks/arc076_b | |
-| 68 |  |  | |
+| 67 | Built? | https://atcoder.jp/contests/abc065/tasks/arc076_b | 考えうるエッジを減らす<br>XとYで各々ソートする|
+| 68 | 素因数分解 | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=NTL_1_A&lang=ja | |
 | 69 |  |  | |
 | 70 |  |  | |
 
