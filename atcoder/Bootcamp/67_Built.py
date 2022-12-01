@@ -15,29 +15,33 @@ import heapq
 def main():
     V = int(input())
     A = []
-    B = []
-    for _ in range(V):
-        A.append(list(map(int,input().split())))
+    for ids in range(V):
+        A.append(list(map(int,input().split()))+[ids]) # [1,5,0] : x,y,ids
     
-    B = [[s[1],s[0]] for s in A]
-
-    A.sort()
-    B.sort()
+    A.sort(key=lambda x:x[0])
 
     G = [[] for _ in range(V)]
+    # xをソートする
     for i in range(V-1):
         rx,ry = A[i][0], A[i][1]
         tx,ty = A[i+1][0], A[i+1][1]
         mn = min(abs(rx-tx),abs(ry-ty))
-        G[i].append((i+1,mn))
-        G[i+1].append((i,mn))
-
-        sx,sy = B[i][1], B[i][0]
-        lx,ly = B[i+1][1], B[i+1][0]
-        mn_y = min(abs(sx-lx),abs(sy-ly))
-        G[i].append((i+1,mn_y))
-        G[i+1].append((i,mn_y))
+        ids = A[i][2]
+        ids_ = A[i+1][2]
+        G[ids].append((ids_,mn))
+        G[ids_].append((ids,mn))
     
+    A.sort(key=lambda x:x[1])
+    # yをソートする
+    for j in range(V-1):
+        sx,sy = A[j][0], A[j][1]
+        lx,ly = A[j+1][0], A[j+1][1]
+        mn_y = min(abs(sx-lx),abs(sy-ly))
+        ids = A[j][2]
+        ids_ = A[j+1][2]
+        G[ids].append((ids_,mn_y))
+        G[ids_].append((ids,mn_y))
+
     que = [(c,w) for w,c in G[0]]
     heapq.heapify(que)
 
