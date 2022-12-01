@@ -108,9 +108,9 @@
 | 62 | Wall | https://atcoder.jp/contests/abc079/tasks/abc079_d | 黙ってワーシャルフロイド書く |
 | 63 | 道の修復 | https://atcoder.jp/contests/abc074/tasks/arc083_b | TLEになる<br>時間あれば再度Cppでやる |
 | 64 | 最小全域木 | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=GRL_2_A&lang=ja | Prim法で優先度キューすればいける |
-| 65 | 本選会場 | https://atcoder.jp/contests/joisc2010/tasks/joisc2010_finals | |
-| 66 | 宇宙ステーション | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=1127 | |
-| 67 |  |  | |
+| 65 | 本選会場 | https://atcoder.jp/contests/joisc2010/tasks/joisc2010_finals | Union-FindでのKruscal法|
+| 66 | 宇宙ステーション | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=1127 | N=1に注意 |
+| 67 | Built? | https://atcoder.jp/contests/abc065/tasks/arc076_b | |
 | 68 |  |  | |
 | 69 |  |  | |
 | 70 |  |  | |
