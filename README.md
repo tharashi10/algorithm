@@ -21,7 +21,7 @@
 | 12 | 最小全域木問題 | ◯   | ◯ |
 | 13 | Union-Find | ◯   | ◯ |
 | 14 | 高速素数判定  | ◯  | ◯ |
-| 15 | 高速なべき乗計算 | | |
+| 15 | 高速なべき乗計算 | ◯ | ◯ |
 | 16 | 逆元         | | |
 | 17 | 累積和       | | |
 | 18 | Imos法      | | |
@@ -40,4 +40,4 @@
 | 06 |  蟻本   | https://www.amazon.co.jp/exec/obidos/ASIN/B00CY9256C/aaaaab0c-22/ref=nosim/| 時間取れそうならやってもいいかも<br>強くはなれそう |
 | 07 | 文法書 　| https://learning.oreilly.com/library/view/introducing-python-2nd/9781492051374/ | 12hくらい |
 | 08 | 応用書  | https://learning.oreilly.com/library/view/fluent-python-2nd/9781492056348/ | Pythonistaに<br>24hくらい|
-| 09 | AtCoder | https://qiita.com/e869120/items/acba3dd8649d913102b5#101--150-%E5%95%8F%E7%9B%AE | 150<br>蟻本の前に |
+| 09 | AtCoder | https://qiita.com/e869120/items/acba3dd8649d913102b5#101--150-%E5%95%8F%E7%9B%AE | 上級(黄色)いける<br>150<br>蟻本の前に |
