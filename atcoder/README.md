@@ -32,7 +32,7 @@
 | 15 | 高速な素数判定法 | OK |
 | 16 | 高速なべき乗計算 | OK |
 | 17 | 逆元を使う問題 | OK |
-| 18 | 累積和 ||
+| 18 | 累積和 | OK |
 | 19 | 累積和: いもす法 ||
 | 20 | Union-Find ||
 | 21 | その他のテクニック ||
@@ -114,8 +114,8 @@
 | 68 | 素因数分解 | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=NTL_1_A&lang=ja | ささっと解けたい<br>高速素数判定+割り算の試行Loop |
 | 69 | Like Number | https://atcoder.jp/contests/abc084/tasks/abc084_d | エラトステネス表作成<br>累積和|
 | 70 | べき乗 | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=NTL_1_B&lang=ja | 2進数にして、逐次2乗する<br> BitのWhile LoopかければOK |
-| 71 | 散歩 | https://atcoder.jp/contests/s8pc-1/tasks/s8pc_1_e | |
-| 72 | | | |
+| 71 | 散歩 | https://atcoder.jp/contests/s8pc-1/tasks/s8pc_1_e | `import accumulate`<br>累積和使う<br>pow(a,n,mod)既にあるらしい |
+| 72 | 逆元 | https://atcoder.jp/contests/abc034/tasks/abc034_c | |
 | 73 | | | |
 | 74 | | | |
 | 75 | | | |
@@ -140,7 +140,7 @@
 | 04   | 2022-10-31(月)~ | BFS | OK |
 | 05   | 2022-11-07(月)~ | 動的計画法 | OK |
 | 06   | 2022-11-14(月)~ | 動的計画法 | OK |
-| 07   | 2022-11-21(月)~ | --- | リスケ(Covid) |
+| 07   | 2022-11-21(月)~ | --- | リスケ(COVID) |
 | 08   | 2022-11-28(月)~ | ダイクストラ・ワーシャルフロイド・最小全域木問題 | OK |
 | 09   | 2022-12-05(月)~ | 逆元を使う問題・累積和 |  |
 | 10   | 2022-12-12(月)~ | Union-Find問題 |  |
