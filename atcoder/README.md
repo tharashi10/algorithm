@@ -31,7 +31,7 @@
 | 14 | 最小全域木問題 | OK |
 | 15 | 高速な素数判定法 | OK |
 | 16 | 高速なべき乗計算 | OK |
-| 17 | 逆元を使う問題 ||
+| 17 | 逆元を使う問題 | OK |
 | 18 | 累積和 ||
 | 19 | 累積和: いもす法 ||
 | 20 | Union-Find ||
@@ -113,7 +113,22 @@
 | 67 | Built? | https://atcoder.jp/contests/abc065/tasks/arc076_b | 考えうるエッジを減らす<br>XとYで各々ソートする|
 | 68 | 素因数分解 | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=NTL_1_A&lang=ja | ささっと解けたい<br>高速素数判定+割り算の試行Loop |
 | 69 | Like Number | https://atcoder.jp/contests/abc084/tasks/abc084_d | エラトステネス表作成<br>累積和|
-| 70 | べき乗 | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=NTL_1_B&lang=ja |  |
+| 70 | べき乗 | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=NTL_1_B&lang=ja | 2進数にして、逐次2乗する<br> BitのWhile LoopかければOK |
+| 71 | 散歩 | https://atcoder.jp/contests/s8pc-1/tasks/s8pc_1_e | |
+| 72 | | | |
+| 73 | | | |
+| 74 | | | |
+| 75 | | | |
+| 76 | | | |
+| 77 | | | |
+| 78 | | | |
+| 79 | | | |
+| 80 | | | |
+| 81 | | | |
+| 82 | | | |
+| 83 | | | |
+| 84 | | | |
+| 85 | | | |
 
 ### 週ごと
 
