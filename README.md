@@ -38,3 +38,6 @@
 | 04 | Big O   | https://qiita.com/Hironsan/items/68161ee16b1c9d7b25fb |計算量|
 | 05 |  螺旋本  | https://book.mynavi.jp/ec/products/detail/id=35408 |100問やった後なら多分瞬殺できる|
 | 06 |  蟻本   | https://www.amazon.co.jp/exec/obidos/ASIN/B00CY9256C/aaaaab0c-22/ref=nosim/| 時間取れそうならやってもいいかも<br>強くはなれそう |
+| 07 | 文法書 　| https://learning.oreilly.com/library/view/introducing-python-2nd/9781492051374/ | 12hくらい |
+| 08 | 応用書  | https://learning.oreilly.com/library/view/fluent-python-2nd/9781492056348/ | Pythonistaに<br>24hくらい|
+| 09 | AtCoder | https://qiita.com/e869120/items/acba3dd8649d913102b5#101--150-%E5%95%8F%E7%9B%AE | 150<br>蟻本の前に |
