@@ -112,8 +112,8 @@
 | 66 | 宇宙ステーション | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=1127 | N=1に注意 |
 | 67 | Built? | https://atcoder.jp/contests/abc065/tasks/arc076_b | 考えうるエッジを減らす<br>XとYで各々ソートする|
 | 68 | 素因数分解 | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=NTL_1_A&lang=ja | ささっと解けたい<br>高速素数判定+割り算の試行Loop |
-| 69 | Like Number | https://atcoder.jp/contests/abc084/tasks/abc084_d | |
-| 70 |  |  | |
+| 69 | Like Number | https://atcoder.jp/contests/abc084/tasks/abc084_d | エラトステネス表作成<br>累積和|
+| 70 | べき乗 | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=NTL_1_B&lang=ja |  |
 
 ### 週ごと
 
