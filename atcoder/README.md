@@ -116,8 +116,8 @@
 | 70 | べき乗 | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=NTL_1_B&lang=ja | 2進数にして、逐次2乗する<br> BitのWhile LoopかければOK |
 | 71 | 散歩 | https://atcoder.jp/contests/s8pc-1/tasks/s8pc_1_e | `import accumulate`<br>累積和使う<br>pow(a,n,mod)既にあるらしい |
 | 72 | 逆元(nCr) | https://atcoder.jp/contests/abc034/tasks/abc034_c | 2項係数nCr問題<br>逆元利用+フェルマー利用 |
-| 73 | Knight | https://atcoder.jp/contests/abc145/tasks/abc145_d | |
-| 74 | | | |
+| 73 | Knight | https://atcoder.jp/contests/abc145/tasks/abc145_d | 例外条件が厳しい<br>連立方程式と逆元でACできる |
+| 74 | 多重ループ | https://atcoder.jp/contests/abc021/tasks/abc021_d | |
 | 75 | | | |
 | 76 | | | |
 | 77 | | | |
