@@ -7,6 +7,11 @@ nCrの nとrを以下で求める
 X = 2s+t
 Y = s+2t
 
+「ここ」と書いたところでなかなかACせず。
+print(0)条件で、X,Y>=stepをチェックしてないとダメなテストケースが2つあった。
+少なくとも、1stepでx座標あるいはy座標は+1されるので、目標点(X,Y)の各値は、
+ステップ数以上でないとならない。
+
 """
 def main():
     N = int(1e6)
@@ -26,7 +31,10 @@ def main():
 
     # stepCk
     ans = fact[step]*inv(fact[k])%MOD*inv(fact[step-k])%MOD
-    print(ans)
+    if (X+Y)%3!=0 or not X>=step or not Y>=step: ## ここ
+        print(0)
+    else:
+        print(ans%MOD)
 
 if __name__=="__main__":
     main()
