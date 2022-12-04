@@ -16,4 +16,7 @@ p: 部分木Aに含まれる頂点の個数 上の式は少なくとも一つ黒
 
 ・各辺eに対して、pを計算すれば、「Sに含まれる辺の個数」がもとまる。
 DFSを利用する
+
+https://atcoder.jp/contests/abc149/submissions/9241604
+https://blog.jupyter.org/interactive-workflows-for-c-with-jupyter-fe9b54227d92
 """
