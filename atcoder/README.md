@@ -119,8 +119,8 @@
 | 73 | Knight | https://atcoder.jp/contests/abc145/tasks/abc145_d | 例外条件が厳しい<br>連立方程式と逆元でACできる |
 | 74 | 多重ループ | https://atcoder.jp/contests/abc021/tasks/abc021_d | 重複組合せ|
 | 75 | 部分木Sと逆元| https://atcoder.jp/contests/abc149/tasks/abc149_f | SKIP<br>実装はメモった |
-| 76 | 余剰リソース | https://atcoder.jp/contests/nikkei2019-final/tasks/nikkei2019_final_a| |
-| 77 | | | |
+| 76 | 余剰リソース | https://atcoder.jp/contests/nikkei2019-final/tasks/nikkei2019_final_a| 累積和<br>Easy |
+| 77 | 旅人 | https://atcoder.jp/contests/joi2010ho/tasks/joi2010ho_a | |
 | 78 | | | |
 | 79 | | | |
 | 80 | | | |
