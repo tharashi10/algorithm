@@ -120,8 +120,8 @@
 | 74 | 多重ループ | https://atcoder.jp/contests/abc021/tasks/abc021_d | 重複組合せ|
 | 75 | 部分木Sと逆元| https://atcoder.jp/contests/abc149/tasks/abc149_f | SKIP<br>実装はメモった |
 | 76 | 余剰リソース | https://atcoder.jp/contests/nikkei2019-final/tasks/nikkei2019_final_a| 累積和<br>Easy |
-| 77 | 旅人 | https://atcoder.jp/contests/joi2010ho/tasks/joi2010ho_a | |
-| 78 | | | |
+| 77 | 旅人 | https://atcoder.jp/contests/joi2010ho/tasks/joi2010ho_a | 累積和<br>TooEasy |
+| 78 | 惑星探査 | https://atcoder.jp/contests/joi2011ho/tasks/joi2011ho1 | |
 | 79 | | | |
 | 80 | | | |
 | 81 | | | |
