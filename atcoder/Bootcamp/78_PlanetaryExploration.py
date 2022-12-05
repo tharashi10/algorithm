@@ -1,5 +1,12 @@
 """
 二次元累積和
+PythonだとTLEするs
+2次元の累積和のロジックをつかめればよしとする
+ACしたいならC++で
+
+10個中5個ACできる
+
+https://kakedashi-engineer.appspot.com/2020/06/20/joi2011hoa/
 
 4 7
 4
@@ -16,25 +23,21 @@ OOJJIJO
 3 5 2
 0 1 0
 10 11 7
-
-
---
-4 7
-1
-JIOJOIJ
-IOJOIJO
-JOIJOOI
-OOJJIJO
-3 5 4 7
 """
-
+from itertools import accumulate
 def main():
     H,W = map(int,input().split())
     M = int(input())
     A = [[None]*W for i in range(H)]
-    sum_j = [[0]*(W+1) for i in range(H+1)]
-    sum_o = [[0]*(W+1) for i in range(H+1)]
-    sum_i = [[0]*(W+1) for i in range(H+1)]
+    J = [[0]*(W+1) for i in range(H+1)]
+    O = [[0]*(W+1) for i in range(H+1)]
+    I = [[0]*(W+1) for i in range(H+1)]
+    sum_j = []
+    sum_o = []
+    sum_i = []
+
+    def transpose(l):
+        return list(map(list,zip(*l)))
     
     for i in range(H):
         st = str(input())
@@ -44,46 +47,40 @@ def main():
     for i in range(H):
         for j in range(W):
             if A[i][j]=='J':
-                sum_j[i+1][j+1]+=1
+                J[i+1][j+1]+=1
             elif A[i][j]=='O':
-                sum_o[i+1][j+1]+=1
+                O[i+1][j+1]+=1
             else:
-                sum_i[i+1][j+1]+=1
+                I[i+1][j+1]+=1
     
-    for i in range(H):
-        for j in range(W):
-            tmp_j = 0
-            if A[i][j]=='J':
-                tmp_j+=1
-            sum_j[i+1][j+1]= sum_j[i][j+1]+sum_j[i+1][j]-sum_j[i][j]+tmp_j
-            
-            tmp_o = 0
-            if A[i][j]=='O':
-                tmp_o+=1
-            sum_o[i+1][j+1]= sum_o[i][j+1]+sum_o[i+1][j]-sum_o[i][j]+tmp_o
-            
-            tmp_i = 0
-            if A[i][j]=='I':
-                tmp_i+=1
-            sum_i[i+1][j+1]= sum_i[i][j+1]+sum_i[i+1][j]-sum_i[i][j]+tmp_i
+    def trans(X):
+        Y = []
+        for x in X:
+            Y.append(list(accumulate(x)))
 
-    print("Query")
-    
-    for i in range(M):
-        a,c,b,d = map(int,input().split())
-        # 区間[a,b) , [c,d)
+        cum_sum = []
+        Y = transpose(Y)
+        for y in Y:
+            cum_sum.append(list(accumulate(y)))
         
-        #print(f"a,b,c,d={a,b,c,d}")
-        #print(f"sum_max:{sum_j[4][7]}")
-        #print(f"sum_max:{sum_j[4][5]}")
-        #print(f"sum_max:{sum_j[3][7]}")
-        #print(f"sum_max:{sum_j[3][5]}")
-        #print(f"sum:{sum_j[b][d],sum_j[a][d],sum_j[b][c],sum_j[a][c]}")
+        cum_sum = transpose(cum_sum)
+        return cum_sum
 
-        ans_j = sum_j[b][d]-sum_j[a][d]-sum_j[b][c]+sum_j[a][c]
-        ans_o = sum_o[b][d]-sum_o[a][d]-sum_o[b][c]+sum_o[a][c]
-        ans_i = sum_i[b][d]-sum_i[a][d]-sum_i[b][c]+sum_i[a][c]
-        print("***************")
+    J = trans(J)
+    O = trans(O)
+    I = trans(I)
+
+    query = []
+    for i in range(M):
+        query.append(map(int,input().split()))
+
+    for q in query:  # 区間[a,b) , [c,d)
+        a,c,b,d = q
+        a-=1
+        c-=1
+        ans_j = J[b][d]-J[a][d]-J[b][c]+J[a][c]
+        ans_o = O[b][d]-O[a][d]-O[b][c]+O[a][c]
+        ans_i = I[b][d]-I[a][d]-I[b][c]+I[a][c]
         print(ans_j,ans_o,ans_i)
 
 if __name__=="__main__":
