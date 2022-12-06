@@ -122,7 +122,7 @@
 | 76 | 余剰リソース | https://atcoder.jp/contests/nikkei2019-final/tasks/nikkei2019_final_a| 累積和<br>Easy |
 | 77 | 旅人 | https://atcoder.jp/contests/joi2010ho/tasks/joi2010ho_a | 累積和<br>TooEasy |
 | 78 | 惑星探査 | https://atcoder.jp/contests/joi2011ho/tasks/joi2011ho1 | ２次元累積和<br>2Dリストの転置を覚えられる|
-| 79 | AtCoder Express 2 | https://atcoder.jp/contests/abc106/tasks/abc106_d| |
+| 79 | AtCoder Express 2 | https://atcoder.jp/contests/abc106/tasks/abc106_d | |
 | 80 | | | |
 | 81 | | | |
 | 82 | | | |
