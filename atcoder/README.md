@@ -124,8 +124,8 @@
 | 78 | 惑星探査 | https://atcoder.jp/contests/joi2011ho/tasks/joi2011ho1 | ２次元累積和<br>2Dリストの転置を覚えられる|
 | 79 | AtCoder Express 2 | https://atcoder.jp/contests/abc106/tasks/abc106_d | 2次元累積和<br>区間Indexの引き算のは少し考える(慣れよう)|
 | 80 | 家の建設　| https://atcoder.jp/contests/gigacode-2019/tasks/gigacode_2019_d| 2次元累積和<br>一旦TLEのままなので要高速化 |
-| 81 | AtColor | https://atcoder.jp/contests/abc014/tasks/abc014_3| |
-| 82 | | | |
+| 81 | AtColor | https://atcoder.jp/contests/abc014/tasks/abc014_3| Imos法<br>1次元 |
+| 82 | Osaki | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=2013 | |
 | 83 | | | |
 | 84 | | | |
 | 85 | | | |
