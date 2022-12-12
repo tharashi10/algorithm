@@ -126,8 +126,8 @@
 | 80 | 家の建設　| https://atcoder.jp/contests/gigacode-2019/tasks/gigacode_2019_d| 2次元累積和<br>一旦TLEのままなので要高速化 |
 | 81 | AtColor | https://atcoder.jp/contests/abc014/tasks/abc014_3| Imos法<br>1次元 |
 | 82 | Osaki | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=2013 |自力ACできた|
-| 83 | 鉄道運賃 | https://atcoder.jp/contests/joi2015ho/tasks/joi2015ho_a| |
-| 84 | | | |
+| 83 | 鉄道運賃 | https://atcoder.jp/contests/joi2015ho/tasks/joi2015ho_a| Imos法<br>何回鉄道を使うかCountする |
+| 84 | 釘 (Nails) |https://atcoder.jp/contests/joi2012ho/tasks/joi2012ho4 | |
 | 85 | | | |
 
 ### 週ごと
@@ -142,7 +142,7 @@
 | 06   | 2022-11-14(月)~ | 動的計画法 | OK |
 | 07   | 2022-11-21(月)~ | --- | リスケ(COVID) |
 | 08   | 2022-11-28(月)~ | ダイクストラ・ワーシャルフロイド・最小全域木問題 | OK |
-| 09   | 2022-12-05(月)~ | 逆元を使う問題・累積和 |  |
+| 09   | 2022-12-05(月)~ | 逆元を使う問題・累積和 | OK |
 | 10   | 2022-12-12(月)~ | Union-Find問題 |  |
 | 11   | 2022-12-19(月)~ | 実装問題・数学的な問題 |  |
 
