@@ -9,7 +9,9 @@
   - Is BFS always preferrable??
     - For Large graphs, DFS is hugely more efficient.
   - Dijskstra’s Short Path 
-- Template
+    - like BFS
+    - Using cost dictionary cost {} in py
+- BFS Template
 ```py
 def bfs(x):
     while len(que)!=0:
@@ -21,6 +23,20 @@ def bfs(x):
                 continue
             dist[v]=(dist[vid]+1)
             que.append(v)
+```
+- Dijskstra Template
+```py
+import heapq
+def dijkstra(s):
+    hq = [(0,s)] # (Weight,node), tuple
+    while hq:
+        cst, now = heapq.heappop(hq)
+        for next in G[now]:
+            tmp = cst + cost[(now,next)]
+            if tmp < dist[next]:
+                dist[next] = tmp
+                heapq.heappush(hq,(tmp,next))
+    return dist 
 ```
 
 ## DP
