@@ -127,8 +127,8 @@
 | 81 | AtColor | https://atcoder.jp/contests/abc014/tasks/abc014_3| Imos法<br>1次元 |
 | 82 | Osaki | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=2013 |自力ACできた|
 | 83 | 鉄道運賃 | https://atcoder.jp/contests/joi2015ho/tasks/joi2015ho_a| Imos法<br>何回鉄道を使うかCountする |
-| 84 | 釘 (Nails) |https://atcoder.jp/contests/joi2012ho/tasks/joi2012ho4 | |
-| 85 | | | |
+| 84 | 釘 (Nails) |https://atcoder.jp/contests/joi2012ho/tasks/joi2012ho4 | Imos法<br>斜めの累積和も考える<br>[TODO]問題|
+| 85 | Union-Find |https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DSL_1_A&lang=ja | |
 
 ### 週ごと
 
