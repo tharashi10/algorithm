@@ -13,14 +13,15 @@ https://www.youtube.com/watch?v=oLO7kLNJt7A
 --
 4
 """
-
+import sys
+sys.setrecursionlimit(int(1e7))
 class UnionFind:
     def __init__(self,n):
         self.n = n
-        self.parent = [-1]*n
+        self.parent = [i for i in range(n)]
     
     def find(self,x):
-        if self.parent[x]==-1:
+        if self.parent[x]==x:
             return x
         self.parent[x] = self.find(self.parent[x])
         return self.parent[x]
@@ -55,10 +56,11 @@ def main():
 
             uf.union(u,v)
         o1,o2 = pair[i]
+        
         if uf.same(o1,o2):
-            print("No")
+            print(f"No ***** parent={uf.parent}")
         else:
-            print(f"Yes: o1={o1}, o2={o2}")
+            print(f"Yes: o1={o1}, o2={o2} ***** parent={uf.parent}")
 
 
 if __name__=="__main__":

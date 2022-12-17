@@ -42,3 +42,4 @@
 | 08 | 応用書  | https://learning.oreilly.com/library/view/fluent-python-2nd/9781492056348/ | Pythonistaに<br>24hくらい|
 | 09 | AtCoder | https://qiita.com/e869120/items/acba3dd8649d913102b5#101--150-%E5%95%8F%E7%9B%AE | 上級(黄色)いける<br>150<br>蟻本の前に |
 | 10 | C++ Jupyter| https://blog.jupyter.org/interactive-workflows-for-c-with-jupyter-fe9b54227d92 | C++文法確認用 |
+| 11 | AtCoder勉強会 | https://www.youtube.com/watch?v=oLO7kLNJt7A | Union Findの例|
