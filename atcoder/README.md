@@ -1,19 +1,19 @@
-# 100 Challenge
-### 作成日
+# 100 Problems Challenge
+### Project Created Date
 - 2022-10-11
 - ![AtCoder](https://img.shields.io/badge/atcoder-atcoder-orange)
-- ![reposize](https://img.shields.io/github/repo-size/tharashi10/terraform)
+- ![reposize](https://img.shields.io/github/repo-size/tharashi10/algorithm)
 - ![Python](https://img.shields.io/badge/python-3.5%20%7C%203.6%20%7C%203.7-blue)
 
-### 目的
-- AtCoderで自信持ってC/D問題を解けるようにする
+### Aims
+- Easily to solve C/D levels of problems provided by AtCoder
 
-### 内容
-- Aizu Online Judgeとやや重複があるが、復習にもなるので以下を進めていく
-- [Qiita中級から](https://qiita.com/e869120/items/eb50fdaece12be418faa#2-3-%E5%88%86%E9%87%8E%E5%88%A5%E5%88%9D%E4%B8%AD%E7%B4%9A%E8%80%85%E3%81%8C%E8%A7%A3%E3%81%8F%E3%81%B9%E3%81%8D%E9%81%8E%E5%8E%BB%E5%95%8F%E7%B2%BE%E9%81%B8-100-%E5%95%8F)
-- 主なコンテンツは以下
+### Contents
+- Aizu Online Judge
+- [Qiita 100 for middle class](https://qiita.com/e869120/items/eb50fdaece12be418faa#2-3-%E5%88%86%E9%87%8E%E5%88%A5%E5%88%9D%E4%B8%AD%E7%B4%9A%E8%80%85%E3%81%8C%E8%A7%A3%E3%81%8F%E3%81%B9%E3%81%8D%E9%81%8E%E5%8E%BB%E5%95%8F%E7%B2%BE%E9%81%B8-100-%E5%95%8F)
+- The contents are following.
 
-| ## | Title | 進捗 |
+| ## | Title | Progress |
 |----|-------|--|
 | 01 | 全探索：全列挙 | OK |
 | 02 | 全探索：工夫して通り数を減らす全列挙 |OK|
@@ -145,21 +145,21 @@
 | 99 |  | | |
 | 100|  | | |
 
-### 週ごと
+### Weekly Planning
 
 | Week |     Duration    |    Title    | 進捗 |
 |------|-----------------|-------------|-----|
-| 01   | 2022-10-10(月)~ | 全探索       |  OK |
-| 02   | 2022-10-17(月)~ | 全探索       |  OK |
-| 03   | 2022-10-24(月)~ | 二分探索・DFS |  OK |
-| 04   | 2022-10-31(月)~ | BFS | OK |
-| 05   | 2022-11-07(月)~ | 動的計画法 | OK |
-| 06   | 2022-11-14(月)~ | 動的計画法 | OK |
-| 07   | 2022-11-21(月)~ | --- | リスケ(COVID) |
-| 08   | 2022-11-28(月)~ | ダイクストラ・ワーシャルフロイド・最小全域木問題 | OK |
-| 09   | 2022-12-05(月)~ | 逆元を使う問題・累積和 | OK |
-| 10   | 2022-12-12(月)~ | Union-Find問題 |  |
-| 11   | 2022-12-19(月)~ | 実装問題・数学的な問題 |  |
+| 01   | 2022-10-10(Mon)~ | 全探索       |  OK |
+| 02   | 2022-10-17(Mon)~ | 全探索       |  OK |
+| 03   | 2022-10-24(Mon)~ | 二分探索・DFS |  OK |
+| 04   | 2022-10-31(Mon)~ | BFS | OK |
+| 05   | 2022-11-07(Mon)~ | 動的計画法 | OK |
+| 06   | 2022-11-14(Mon)~ | 動的計画法 | OK |
+| 07   | 2022-11-21(Mon)~ | --- | リスケ(COVID) |
+| 08   | 2022-11-28(Mon)~ | ダイクストラ・ワーシャルフロイド・最小全域木問題 | OK |
+| 09   | 2022-12-05(Mon)~ | 逆元を使う問題・累積和 | OK |
+| 10   | 2022-12-12(Mon)~ | Union-Find問題 |  |
+| 11   | 2022-12-19(Mon)~ | 実装問題・数学的な問題 |  |
 
 
 ### アルゴリズム基本

@@ -39,5 +39,3 @@ def dijkstra(s):
     return dist 
 ```
 
-## DP
-
