@@ -35,7 +35,7 @@
 | 18 | 累積和 | OK |
 | 19 | 累積和: いもす法 | OK |
 | 20 | Union-Find | OK |
-| 21 | その他のテクニック ||
+| 21 | その他のテクニック |OK|
 | 22 | 実装問題 ||
 | 23 | 数学的な問題 ||
 
@@ -129,8 +129,8 @@
 | 83 | 鉄道運賃 | https://atcoder.jp/contests/joi2015ho/tasks/joi2015ho_a| Imos法<br>何回鉄道を使うかCountする |
 | 84 | 釘 (Nails) |https://atcoder.jp/contests/joi2012ho/tasks/joi2012ho4 | Imos法<br>斜めの累積和も考える<br>[TODO]問題|
 | 85 | Union-Find |https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DSL_1_A&lang=ja | 再帰でLimit外し必要<br>基本問題 |
-| 86 | Bridge | https://atcoder.jp/contests/abc075/tasks/abc075_c?lang=ja | |
-| 87 |  | | |
+| 86 | Bridge | https://atcoder.jp/contests/abc075/tasks/abc075_c?lang=ja | ClassでUnionFindを書いてあげる<br>Edgeに着目して、そいつを取り除いた時に、他のノード/エッジたちで根が一緒でなければ「橋」といえる|
+| 87 | Decayed Bridges | https://atcoder.jp/contests/abc120/tasks/abc120_d | |
 | 88 |  | | |
 | 89 |  | | |
 | 90 |  | | |
@@ -158,7 +158,7 @@
 | 07   | 2022-11-21(月)~ | --- | リスケ(COVID) |
 | 08   | 2022-11-28(月)~ | ダイクストラ・ワーシャルフロイド・最小全域木問題 | OK |
 | 09   | 2022-12-05(月)~ | 逆元を使う問題・累積和 | OK |
-| 10   | 2022-12-12(月)~ | Union-Find問題 |  |
+| 10   | 2022-12-12(月)~ | Union-Find問題 | OK |
 | 11   | 2022-12-19(月)~ | 実装問題・数学的な問題 |  |
 
 
