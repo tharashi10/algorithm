@@ -15,164 +15,152 @@
 
 | ## | Title | Progress |
 |----|-------|--|
-| 01 | 全探索：全列挙 | OK |
-| 02 | 全探索：工夫して通り数を減らす全列挙 |OK|
-| 03 | 全探索：ビット全探索 | OK |
-| 04 | 全探索：順列全探索 | OK |
-| 05 | 二分探索 | OK |
-| 06 | 深さ優先探索 | OK |
-| 07 | 幅優先探索 | OK |
-| 08 | 動的計画法：ナップザック DP | OK |
-| 09 | 動的計画法：区間 DP | OK |
-| 10 | 動的計画法：bit DP | OK |
-| 11 | 動的計画法：その他 | OK |
-| 12 | 最短経路問題：ダイクストラ法 | OK |
-| 13 | 最短経路問題：ワーシャルフロイド法 | OK |
-| 14 | 最小全域木問題 | OK |
-| 15 | 高速な素数判定法 | OK |
-| 16 | 高速なべき乗計算 | OK |
-| 17 | 逆元を使う問題 | OK |
-| 18 | 累積和 | OK |
-| 19 | 累積和: いもす法 | OK |
+| 01 | Brute-force：fundamental | OK |
+| 02 | Brute-force：arranged brute-force |OK|
+| 03 | Brute-force：bit | OK |
+| 04 | Brute-force：Permutation | OK |
+| 05 | Binary Search | OK |
+| 06 | Depth First Search | OK |
+| 07 | Breath First Search | OK |
+| 08 | DP：Knapsack DP | OK |
+| 09 | DP：Range DP | OK |
+| 10 | DP：bit DP | OK |
+| 11 | DP：Others | OK |
+| 12 | Shortest Path ：Dijkstra | OK |
+| 13 | Shortest Path ：Floyd–Warshall | OK |
+| 14 | Minimum Spanning Tree | OK |
+| 15 | Judging Prime Number | OK |
+| 16 | Faster using the Power | OK |
+| 17 | Inverse Element | OK |
+| 18 | Cum Sum | OK |
+| 19 | Cum Sum: Imos | OK |
 | 20 | Union-Find | OK |
-| 21 | その他のテクニック |OK|
-| 22 | 実装問題 ||
-| 23 | 数学的な問題 ||
+| 21 | Other Technique |OK|
+| 22 | Implementation ||
+| 23 | Mathematics ||
 
 
-### 実際の解くべき問題Set
+### Problems Set list
 
-| ## | Title | URL | Knowledge |
-|----|-------|-------|--|
-| 01 | 組み合わせ(基本)| https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ITP1_7_B&lang=ja | 全探索, Listのfiter |
-| 02 |  約数8個だけの整数 | https://atcoder.jp/contests/abc106/tasks/abc106_b | 約数の全探索 |
-| 03 | ACGT 文字列 | https://atcoder.jp/contests/abc122/tasks/abc122_b | 連続値のカウント |
-| 04 | Karaoke | https://atcoder.jp/contests/pakencamp-2019-day3/tasks/pakencamp_2019_day3_c | ひたすらFor文(組み合わせ時のfor文のIndex)。<br>これが解ければ全探索に慣れたと思って良いです。とQiitaに書かれおり、特に何もみずに解けたのでこれからは全探索慣れたと言う。 |
-| 05 | Half and Half | https://atcoder.jp/contests/abc095/tasks/arc096_a | よく出てきそうな場合分け問題 |
-| 06 | **Lucky PIN** | https://atcoder.jp/contests/sumitrust2019/tasks/sumitb2019_d | 全探索で逆算で考える.<br>`str.zfill()`の使い方<br>find(str)の使い方;Trueならindexを返す.<br>find(str,num)の使い方:第二引数で開始点を指定<br> |
-| 07 | Archaeological Sites | https://atcoder.jp/contests/joi2007ho/tasks/joi2007ho_c | Listのフィルタ(値の削除)、ベクトルの演算(Zipを使う)<br>と思ったが、in List使った時点で、TLEになる。<br>setに置換して頑張るしかない模様。なんとかAC.. <br>.pyの場合、 Codeは最小限にかかないとACにならない |
-| 08 | AtCoder Market | https://atcoder.jp/contests/s8pc-6/tasks/s8pc_6_b | 計算量が$N^3$なので全探索有効<br>ステップ系での`abs()`の使い方|
-| 09 | Constellation | https://atcoder.jp/contests/joi2008yo/tasks/joi2008yo_d | ある点に着目して考え得る平行移動ベクトルを全探索する<br> 座標を返すLambda式<br> set(tuple)での計算(座標)|
-| 10 | Exhaustive Search | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_5_A | Bit探索の基本<br>シフト演算のユースケースを理解<br> `(x>>n)&1`(xは10進数. 2進数で表した際にn桁目の数が1となる場合True|
-| 11 | Switch | https://atcoder.jp/contests/abc128/tasks/abc128_c | 全探索bit<br>全探索bit分かっててもSwitchと電球で頭が混乱する→5日後再度解く(2022-10-21) |
-| 12 | Faction | https://atcoder.jp/contests/abc002/tasks/abc002_4 | 全探索bit<br> 2重ループを一気に抜け出す方法(flag利用)<br> nC2をfor..forで記述|
-| 13 | Osenbei | https://atcoder.jp/contests/joi2008yo/tasks/joi2008yo_e | [TODO] |
-| 14 | BuildingsColorful | https://atcoder.jp/contests/s8pc-4/tasks/s8pc_4_b| Bit全探索<br>初期値を10**18にすべし |
-| 15 | Average Length | https://atcoder.jp/contests/abc145/tasks/abc145_c | 順列全探索<br>問題はEasy |
-| 16 |  Count Order |https://atcoder.jp/contests/abc150/tasks/abc150_c | 順列全探索<br>問題はTooEasy<br>エラーハンドリングはしなくてOK|
-| 17 | 8 Queens | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_13_A&lang=ja | 順列全探索<br>斜め判定を一時関数的に考える<br>出力でJoin|
-| 18 | Binary Search | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_4_B&lang=ja| 二分探索<br>Midで絞り込む|
-| 19 | Pizza | https://atcoder.jp/contests/joi2009ho/tasks/joi2009ho_b | 二分探索は`bisect`を使うべし(Listに昇順でAppend可能)<br>円環なので番兵使う(ラストに原点追加)|
-| 20 | Snuke Festival | https://atcoder.jp/contests/abc077/tasks/arc084_a | 固定する段が大事<br> 3組を考える場合は真ん中をFix(定石)|
-| 21 | 射撃王 | https://atcoder.jp/contests/abc023/tasks/abc023_d| 二分探索<br>最小問題→判定問題と読み解く<br> 探索は両サイドから解を絞ってく|
-| 22 | ムーアの法則 |https://atcoder.jp/contests/arc054/tasks/arc054_b | 二分法(二分探索と同じ考え方)<br>2回微分と`f'(x)`の単調性利用|
-| 23 | ダーツ | https://atcoder.jp/contests/joi2008ho/tasks/joi2008ho_c | Diffして二分探索<br> |
-| 24 | 深さ優先探索 | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_11_B | DFS問題(再帰で)<br>行きがけと帰りがけを利用 |
-| 25 | How Many Islands? | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=1160&lang=jp | 再帰の上限数を引き上げるべし<br> Listの作成時Immutableになることに留意 |
-| 26 | Ki | https://atcoder.jp/contests/abc138/tasks/abc138_d | 累積和で計算するべし<br>隣接リストAを双方向で保存する |
-| 27 | 薄氷 | https://atcoder.jp/contests/joi2009yo/tasks/joi2009yo_d | 異なるパス毎に計算していく<br>引数に位置だけでなく、スコアも入れる |
-| 28 | AOJ-BFS | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_11_C&lang=ja | 既に訪問済みリストを作る<br>浅い段階でメモした深さが最短を表す |
-| 29 | 迷路BFS | https://atcoder.jp/contests/abc007/tasks/abc007_3 | 自力でいける |
-| 30 | Cheese | https://atcoder.jp/contests/joi2011yo/tasks/joi2011yo_e | 自力でいける |
-| 31 | イルミネーション |https://atcoder.jp/contests/joi2012yo/tasks/joi2012yo_e | 6方向をきちんと書く<br>周りを0埋めする<br>同じ処理を書かないこと |
-| 32 | Amazing Mazes | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=1166&lang=jp | 縦壁と横壁を作る<br>標準入力は癖あり |
-| 33 | Grid Repainting  | https://atcoder.jp/contests/abc088/tasks/abc088_d | 自力で行けた|
-| 34 | フィボナッチ数列| https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_10_A&lang=ja | 自力で行けた |
-| 35 | Knapsack Problem |https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DPL_1_B&lang=ja | DP表を書けるかが全て<br>DPは全部で3種類ある<br>1.ナップザックDP<br>2.区間DP<br>3.bit DP|
-| 36 | Knapsack Problem v2| https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DPL_1_C&lang=ja| 一般ナップザックは同一行を参照する |
-| 37 | 最小コインの枚数 | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DPL_1_A&lang=ja |`最小個数部分和問題`というそう<br>自力できた |
-| 38 | 最長共通部分列　| https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_10_C&lang=ja| 1次元配列のdpを作ればTLE回避できる |
-| 39 | 1年生 | https://atcoder.jp/contests/joi2011yo/tasks/joi2011yo_d |DP表かけるか |
-| 40 | パスタ |https://atcoder.jp/contests/joi2012yo/tasks/joi2012yo_d<br>https://atcoder.jp/contests/dp/tasks/dp_c (こちらの問題にすり替え) |オリジナルは重い<br>別の類題でAC済み |
-| 41 |暑い日々 | https://atcoder.jp/contests/joi2013yo/tasks/joi2013yo_d| 初期条件の設定を誤らないこと<br>同じ服が続いてもOK<br>自力でいける |
-| 42 | シルクロード| https://atcoder.jp/contests/joi2015yo/tasks/joi2015yo_d| dp表を書く。<br>書ければいける。<br>無限大=`10**10`とするべし |
-| 43 | パ研軍旗 | https://atcoder.jp/contests/pakencamp-2019-day3/tasks/pakencamp_2019_day3_d | dict使ったが剰余%使えるとNice<br>無限大=`10**10`とするべし |
-| 44 | ポロック予想 | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=1167&lang=jp | 重複OKな動的計画法 |
-| 45 | 差分パルス符号変調 | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=2199&lang=jp| `dp[i][j]`: i番目の入力信号で、複合後の出力信号がjとなる時の、二乗和の最小と定義する |
-| 46 | 連鎖行列積 | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_10_B&lang=ja | 基本問題だけどむずかった<br>kでのレンジをdiffで終了と開始の差分にしないと計算一生合わない|
-| 47 | ケーキ切り分け | https://atcoder.jp/contests/joi2015ho/tasks/joi2015ho_b| じっくりもう一回トライしたい(C++で) |
-| 48 | だるま落とし| https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=1611&lang=jp | `dp[l][r]` とおく<br>区間の状態をDPで表す|
-| 49 |巡回セールスマン | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DPL_2_A&lang=ja | 再帰DPはうまくいかなかった<br>ボトムアップで理解 |
-| 50 | 無向TSP | https://atcoder.jp/contests/s8pc-1/tasks/s8pc_1_g | こちらもボトムアップで<br>経路用のep表も作る |
-| 51 | 部活のスケジュール| https://atcoder.jp/contests/joi2014yo/tasks/joi2014yo_d | 自力で実装できた<br>2進数は111的な感じで書き殴るべし<br>dp[S][i]ではなく、dp[JOI][i日目]のようにメモには書くべし|
-| 52 | ぬいぐるみの整理 | https://atcoder.jp/contests/joi2017yo/tasks/joi2017yo_d |SKIPすることとする<br>bitDP理解したい |
-| 53 | 最長増加連続部分列 | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DPL_1_D&lang=ja | bisect<br>公式的にInputしておく |
-| 54 | トランプ挿入ソート | https://atcoder.jp/contests/abc006/tasks/abc006_4 | bisect　|
-| 55 |色塗り| https://atcoder.jp/contests/abc134/tasks/abc134_e |「LIS の双対問題」<br> 入力配列AをA[::-1]で逆順にする |
-| 56 | ダイクストラ | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=GRL_1_A&lang=ja | Priority Queue<br>cost{}(=adj),dist[], hq[(tuple)]を用意 |
-| 57 | 船旅 | https://atcoder.jp/contests/joi2008yo/tasks/joi2008yo_f | 56と同じ |
-| 58 | ゾンビ島 | https://atcoder.jp/contests/joi2016yo/tasks/joi2016yo_e | BFS + Dijkstra<br> 2Testcase/5 時間あれば改良|
-| 59 | Taxi | https://atcoder.jp/contests/joi2014yo/tasks/joi2014yo_e | BFS+Dijkstra<br>PythonだとTLEになる<br> ACしたいならC++で |
-| 60 | 全点対間最短経路 | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=GRL_1_C&lang=ja | ワーシャルフロイドがわかってしまえば簡単<br>dp3重ループでお終い |
-| 61 | バスと避けられない運命 | https://atcoder.jp/contests/abc012/tasks/abc012_4 | 黙ってワーシャルフロイド書く<br>TLEするのでC++でやりましょう |
-| 62 | Wall | https://atcoder.jp/contests/abc079/tasks/abc079_d | 黙ってワーシャルフロイド書く |
-| 63 | 道の修復 | https://atcoder.jp/contests/abc074/tasks/arc083_b | TLEになる<br>時間あれば再度Cppでやる |
-| 64 | 最小全域木 | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=GRL_2_A&lang=ja | Prim法で優先度キューすればいける |
-| 65 | 本選会場 | https://atcoder.jp/contests/joisc2010/tasks/joisc2010_finals | Union-FindでのKruscal法|
-| 66 | 宇宙ステーション | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=1127 | N=1に注意 |
-| 67 | Built? | https://atcoder.jp/contests/abc065/tasks/arc076_b | 考えうるエッジを減らす<br>XとYで各々ソートする|
-| 68 | 素因数分解 | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=NTL_1_A&lang=ja | ささっと解けたい<br>高速素数判定+割り算の試行Loop |
-| 69 | Like Number | https://atcoder.jp/contests/abc084/tasks/abc084_d | エラトステネス表作成<br>累積和|
-| 70 | べき乗 | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=NTL_1_B&lang=ja | 2進数にして、逐次2乗する<br> BitのWhile LoopかければOK |
-| 71 | 散歩 | https://atcoder.jp/contests/s8pc-1/tasks/s8pc_1_e | `import accumulate`<br>累積和使う<br>pow(a,n,mod)既にあるらしい |
-| 72 | 逆元(nCr) | https://atcoder.jp/contests/abc034/tasks/abc034_c | 2項係数nCr問題<br>逆元利用+フェルマー利用 |
-| 73 | Knight | https://atcoder.jp/contests/abc145/tasks/abc145_d | 例外条件が厳しい<br>連立方程式と逆元でACできる |
-| 74 | 多重ループ | https://atcoder.jp/contests/abc021/tasks/abc021_d | 重複組合せ|
-| 75 | 部分木Sと逆元| https://atcoder.jp/contests/abc149/tasks/abc149_f | SKIP<br>実装はメモった |
-| 76 | 余剰リソース | https://atcoder.jp/contests/nikkei2019-final/tasks/nikkei2019_final_a| 累積和<br>Easy |
-| 77 | 旅人 | https://atcoder.jp/contests/joi2010ho/tasks/joi2010ho_a | 累積和<br>TooEasy |
-| 78 | 惑星探査 | https://atcoder.jp/contests/joi2011ho/tasks/joi2011ho1 | ２次元累積和<br>2Dリストの転置を覚えられる|
-| 79 | AtCoder Express 2 | https://atcoder.jp/contests/abc106/tasks/abc106_d | 2次元累積和<br>区間Indexの引き算のは少し考える(慣れよう)|
-| 80 | 家の建設　| https://atcoder.jp/contests/gigacode-2019/tasks/gigacode_2019_d| 2次元累積和<br>一旦TLEのままなので要高速化 |
-| 81 | AtColor | https://atcoder.jp/contests/abc014/tasks/abc014_3| Imos法<br>1次元 |
-| 82 | Osaki | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=2013 |自力ACできた|
-| 83 | 鉄道運賃 | https://atcoder.jp/contests/joi2015ho/tasks/joi2015ho_a| Imos法<br>何回鉄道を使うかCountする |
-| 84 | 釘 (Nails) |https://atcoder.jp/contests/joi2012ho/tasks/joi2012ho4 | Imos法<br>斜めの累積和も考える<br>[TODO]問題|
-| 85 | Union-Find |https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DSL_1_A&lang=ja | 再帰でLimit外し必要<br>基本問題 |
-| 86 | Bridge | https://atcoder.jp/contests/abc075/tasks/abc075_c?lang=ja | ClassでUnionFindを書いてあげる<br>Edgeに着目して、そいつを取り除いた時に、他のノード/エッジたちで根が一緒でなければ「橋」といえる|
-| 87 | Decayed Bridges | https://atcoder.jp/contests/abc120/tasks/abc120_d | |
-| 88 |  | | |
-| 89 |  | | |
-| 90 |  | | |
-| 91 |  | | |
-| 92 |  | | |
-| 93 |  | | |
-| 94 |  | | |
-| 95 |  | | |
-| 96 |  | | |
-| 97 |  | | |
-| 98 |  | | |
-| 99 |  | | |
-| 100|  | | |
+| ## | Title |  URL  |
+|----|-------|-------|
+| 01 | 組み合わせ(基本)| https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ITP1_7_B&lang=ja |
+| 02 |  約数8個だけの整数 | https://atcoder.jp/contests/abc106/tasks/abc106_b |
+| 03 | ACGT 文字列 | https://atcoder.jp/contests/abc122/tasks/abc122_b |
+| 04 | Karaoke | https://atcoder.jp/contests/pakencamp-2019-day3/tasks/pakencamp_2019_day3_c |
+| 05 | Half and Half | https://atcoder.jp/contests/abc095/tasks/arc096_a |
+| 06 | **Lucky PIN** | https://atcoder.jp/contests/sumitrust2019/tasks/sumitb2019_d |
+| 07 | Archaeological Sites | https://atcoder.jp/contests/joi2007ho/tasks/joi2007ho_c |
+| 08 | AtCoder Market | https://atcoder.jp/contests/s8pc-6/tasks/s8pc_6_b |
+| 09 | Constellation | https://atcoder.jp/contests/joi2008yo/tasks/joi2008yo_d |
+| 10 | Exhaustive Search | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_5_A |
+| 11 | Switch | https://atcoder.jp/contests/abc128/tasks/abc128_c |
+| 12 | Faction | https://atcoder.jp/contests/abc002/tasks/abc002_4 |
+| 13 | Osenbei | https://atcoder.jp/contests/joi2008yo/tasks/joi2008yo_e |
+| 14 | BuildingsColorful | https://atcoder.jp/contests/s8pc-4/tasks/s8pc_4_b|
+| 15 | Average Length | https://atcoder.jp/contests/abc145/tasks/abc145_c |
+| 16 |  Count Order |https://atcoder.jp/contests/abc150/tasks/abc150_c |
+| 17 | 8 Queens | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_13_A&lang=ja |
+| 18 | Binary Search | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_4_B&lang=ja|
+| 19 | Pizza | https://atcoder.jp/contests/joi2009ho/tasks/joi2009ho_b |
+| 20 | Snuke Festival | https://atcoder.jp/contests/abc077/tasks/arc084_a |
+| 21 | 射撃王 | https://atcoder.jp/contests/abc023/tasks/abc023_d|
+| 22 | ムーアの法則 |https://atcoder.jp/contests/arc054/tasks/arc054_b |
+| 23 | ダーツ | https://atcoder.jp/contests/joi2008ho/tasks/joi2008ho_c |
+| 24 | 深さ優先探索 | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_11_B |
+| 25 | How Many Islands? | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=1160&lang=jp |
+| 26 | Ki | https://atcoder.jp/contests/abc138/tasks/abc138_d |
+| 27 | 薄氷 | https://atcoder.jp/contests/joi2009yo/tasks/joi2009yo_d |
+| 28 | AOJ-BFS | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_11_C&lang=ja |
+| 29 | 迷路BFS | https://atcoder.jp/contests/abc007/tasks/abc007_3 |
+| 30 | Cheese | https://atcoder.jp/contests/joi2011yo/tasks/joi2011yo_e |
+| 31 | イルミネーション |https://atcoder.jp/contests/joi2012yo/tasks/joi2012yo_e | 
+| 32 | Amazing Mazes | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=1166&lang=jp | 
+| 33 | Grid Repainting  | https://atcoder.jp/contests/abc088/tasks/abc088_d |
+| 34 | フィボナッチ数列| https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_10_A&lang=ja |
+| 35 | Knapsack Problem |https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DPL_1_B&lang=ja |
+| 36 | Knapsack Problem v2| https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DPL_1_C&lang=ja|
+| 37 | 最小コインの枚数 | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DPL_1_A&lang=ja |
+| 38 | 最長共通部分列　| https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_10_C&lang=ja| 
+| 39 | 1年生 | https://atcoder.jp/contests/joi2011yo/tasks/joi2011yo_d |
+| 40 | パスタ |https://atcoder.jp/contests/joi2012yo/tasks/joi2012yo_d<br>https://atcoder.jp/contests/dp/tasks/dp_c (こちらの問題にすり替え) |
+| 41 |暑い日々 | https://atcoder.jp/contests/joi2013yo/tasks/joi2013yo_d|
+| 42 | シルクロード| https://atcoder.jp/contests/joi2015yo/tasks/joi2015yo_d|
+| 43 | パ研軍旗 | https://atcoder.jp/contests/pakencamp-2019-day3/tasks/pakencamp_2019_day3_d |
+| 44 | ポロック予想 | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=1167&lang=jp | 
+| 45 | 差分パルス符号変調 | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=2199&lang=jp| 
+| 46 | 連鎖行列積 | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_10_B&lang=ja | 
+| 47 | ケーキ切り分け | https://atcoder.jp/contests/joi2015ho/tasks/joi2015ho_b| 
+| 48 | だるま落とし| https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=1611&lang=jp |
+| 49 |巡回セールスマン | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DPL_2_A&lang=ja |
+| 50 | 無向TSP | https://atcoder.jp/contests/s8pc-1/tasks/s8pc_1_g |
+| 51 | 部活のスケジュール| https://atcoder.jp/contests/joi2014yo/tasks/joi2014yo_d |
+| 52 | ぬいぐるみの整理 | https://atcoder.jp/contests/joi2017yo/tasks/joi2017yo_d |
+| 53 | 最長増加連続部分列 | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DPL_1_D&lang=ja |
+| 54 | トランプ挿入ソート | https://atcoder.jp/contests/abc006/tasks/abc006_4 |
+| 55 |色塗り| https://atcoder.jp/contests/abc134/tasks/abc134_e |
+| 56 | ダイクストラ | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=GRL_1_A&lang=ja | 
+| 57 | 船旅 | https://atcoder.jp/contests/joi2008yo/tasks/joi2008yo_f |
+| 58 | ゾンビ島 | https://atcoder.jp/contests/joi2016yo/tasks/joi2016yo_e | 
+| 59 | Taxi | https://atcoder.jp/contests/joi2014yo/tasks/joi2014yo_e | 
+| 60 | 全点対間最短経路 | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=GRL_1_C&lang=ja | 
+| 61 | バスと避けられない運命 | https://atcoder.jp/contests/abc012/tasks/abc012_4 | 
+| 62 | Wall | https://atcoder.jp/contests/abc079/tasks/abc079_d |
+| 63 | 道の修復 | https://atcoder.jp/contests/abc074/tasks/arc083_b | 
+| 64 | 最小全域木 | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=GRL_2_A&lang=ja |
+| 65 | 本選会場 | https://atcoder.jp/contests/joisc2010/tasks/joisc2010_finals |
+| 66 | 宇宙ステーション | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=1127 |
+| 67 | Built? | https://atcoder.jp/contests/abc065/tasks/arc076_b |
+| 68 | 素因数分解 | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=NTL_1_A&lang=ja |
+| 69 | Like Number | https://atcoder.jp/contests/abc084/tasks/abc084_d | 
+| 70 | べき乗 | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=NTL_1_B&lang=ja |
+| 71 | 散歩 | https://atcoder.jp/contests/s8pc-1/tasks/s8pc_1_e |
+| 72 | 逆元(nCr) | https://atcoder.jp/contests/abc034/tasks/abc034_c |
+| 73 | Knight | https://atcoder.jp/contests/abc145/tasks/abc145_d | 
+| 74 | 多重ループ | https://atcoder.jp/contests/abc021/tasks/abc021_d | 
+| 75 | 部分木Sと逆元| https://atcoder.jp/contests/abc149/tasks/abc149_f |
+| 76 | 余剰リソース | https://atcoder.jp/contests/nikkei2019-final/tasks/nikkei2019_final_a|
+| 77 | 旅人 | https://atcoder.jp/contests/joi2010ho/tasks/joi2010ho_a | 
+| 78 | 惑星探査 | https://atcoder.jp/contests/joi2011ho/tasks/joi2011ho1 | 
+| 79 | AtCoder Express 2 | https://atcoder.jp/contests/abc106/tasks/abc106_d |
+| 80 | 家の建設　| https://atcoder.jp/contests/gigacode-2019/tasks/gigacode_2019_d| 
+| 81 | AtColor | https://atcoder.jp/contests/abc014/tasks/abc014_3|
+| 82 | Osaki | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=2013 |
+| 83 | 鉄道運賃 | https://atcoder.jp/contests/joi2015ho/tasks/joi2015ho_a| 
+| 84 | 釘 (Nails) |https://atcoder.jp/contests/joi2012ho/tasks/joi2012ho4 |
+| 85 | Union-Find |https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DSL_1_A&lang=ja |
+| 86 | Bridge | https://atcoder.jp/contests/abc075/tasks/abc075_c?lang=ja |
+| 87 | Decayed Bridges | https://atcoder.jp/contests/abc120/tasks/abc120_d |
+| 88 |  | |
+| 89 |  | |
+| 90 |  | |
+| 91 |  | |
+| 92 |  | |
+| 93 |  | |
+| 94 |  | |
+| 95 |  | |
+| 96 |  | |
+| 97 |  | |
+| 98 |  | |
+| 99 |  | |
+| 100|  | |
 
 ### Weekly Planning
 
-| Week |     Duration    |    Title    | 進捗 |
-|------|-----------------|-------------|-----|
-| 01   | 2022-10-10(Mon)~ | 全探索       |  OK |
-| 02   | 2022-10-17(Mon)~ | 全探索       |  OK |
-| 03   | 2022-10-24(Mon)~ | 二分探索・DFS |  OK |
+| Week |     Duration    |    Title            | Progress |
+|------|-----------------|---------------------|-----|
+| 01   | 2022-10-10(Mon)~ | Brute-force Search |  OK |
+| 02   | 2022-10-17(Mon)~ | Brute-force Search |  OK |
+| 03   | 2022-10-24(Mon)~ | Binary Search /DFS |  OK |
 | 04   | 2022-10-31(Mon)~ | BFS | OK |
-| 05   | 2022-11-07(Mon)~ | 動的計画法 | OK |
-| 06   | 2022-11-14(Mon)~ | 動的計画法 | OK |
-| 07   | 2022-11-21(Mon)~ | --- | リスケ(COVID) |
-| 08   | 2022-11-28(Mon)~ | ダイクストラ・ワーシャルフロイド・最小全域木問題 | OK |
-| 09   | 2022-12-05(Mon)~ | 逆元を使う問題・累積和 | OK |
-| 10   | 2022-12-12(Mon)~ | Union-Find問題 |  |
-| 11   | 2022-12-19(Mon)~ | 実装問題・数学的な問題 |  |
+| 05   | 2022-11-07(Mon)~ | Dynamic Planning | OK |
+| 06   | 2022-11-14(Mon)~ | Dynamic Planning | OK |
+| 07   | 2022-11-21(Mon)~ | --- | Reschedule for getting sick|
+| 08   | 2022-11-28(Mon)~ | Dijkstra・Floyd–Warshall・Minimum Spanning Tree| OK |
+| 09   | 2022-12-05(Mon)~ | Inverse Element/ Cumulative Sum | OK |
+| 10   | 2022-12-12(Mon)~ | Union-Find | OK |
+| 11   | 2022-12-19(Mon)~ | Quantitative/Math Approach |  |
 
-
-### アルゴリズム基本
-#### ナップザックDP
-- 製品数×最大容量値 のDP表を書く
-- 式
-$$
-dp_{(i+1),(j)} =  
-\left\{
-    \begin{array}{ll}
-    dp_{(i-1),(j-w)}+value_{(i)} & 容量j-w>=0 \\
-    dp_{(i-1),(j)} & Others
-    \end{array}
-\right.
-$$
-
+### Next
+- Challenging advanced algorithms
+- Progressing in another Private Repository
