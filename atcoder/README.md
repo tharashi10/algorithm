@@ -131,7 +131,7 @@
 | 85 | Union-Find |https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DSL_1_A&lang=ja |
 | 86 | Bridge | https://atcoder.jp/contests/abc075/tasks/abc075_c?lang=ja |
 | 87 | Decayed Bridges | https://atcoder.jp/contests/abc120/tasks/abc120_d |
-| 88 |  | |
+| 88 | Goishi | https://atcoder.jp/contests/joi2008ho/tasks/joi2008ho_a |
 | 89 |  | |
 | 90 |  | |
 | 91 |  | |
