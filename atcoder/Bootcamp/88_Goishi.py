@@ -48,21 +48,19 @@ def main():
         color = str(input())
         atLast = ll[-1]
         
+        # Same Color
         if atLast[0] == color:
             ll.remove(atLast)
             ll.insert(len(ll),(atLast[0],atLast[1]+1))
         else:
+            # Different Color
             if i%2==1: # Odd
                 ll.append((color,1))
-            
-            if i%2==0: # Even
-                ll.remove(atLast)
-                ll.insert(len(ll),(atLast[0],atLast[1]+1))
             else:
                 # 新規に置く碁石の色で塗り替える
                 ll.remove(atLast)
-                ll.insert(len(ll),(atLast[0],atLast[1]+1))
-    ans = 0 
+                ll.insert(len(ll),(color,atLast[1]+1))
+    ans = 0
     for i in range(len(ll)):
         if ll[i][0]==str(0):
             ans+=ll[i][1]
