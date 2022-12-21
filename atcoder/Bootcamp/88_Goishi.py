@@ -47,24 +47,26 @@ def main():
         
         color = str(input())
         atLast = ll[-1]
-        
+
         # Same Color
         if atLast[0] == color:
             ll.remove(atLast)
-            ll.insert(len(ll),(atLast[0],atLast[1]+1))
+            ll.insert(len(ll),(color,atLast[1]+1))
+
         else:
             # Different Color
-            if i%2==1: # Odd
+            if (i+1)%2==1: # Odd
                 ll.append((color,1))
+                
             else:
                 # 新規に置く碁石の色で塗り替える
                 ll.remove(atLast)
                 ll.insert(len(ll),(color,atLast[1]+1))
+                #print(f"dif_color: {i+1} th ,ll:{ll},atLast:{atLast}")
     ans = 0
     for i in range(len(ll)):
         if ll[i][0]==str(0):
             ans+=ll[i][1]
-    print(f"ll={ll}")
     print(ans)
 
 if __name__=="__main__":
