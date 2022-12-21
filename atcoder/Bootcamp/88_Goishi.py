@@ -5,6 +5,7 @@ decode/encodeの実装はPythonでList(tuple(char,int))使って簡単にでき�
 
 0=White
 1=Black
+-------
 8
 1
 0
@@ -14,41 +15,59 @@ decode/encodeの実装はPythonでList(tuple(char,int))使って簡単にでき�
 0
 0
 0
-
-PC再起動のためブラウザメモ
-https://docs.python.org/3/library/itertools.html#itertools.groupby
-https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_accessibility
-https://spring.io/guides/tutorials/react-and-spring-data-rest/
-https://atug.tokyo/?p=490
-https://cstack.github.io/db_tutorial/parts/part5.html
-https://www.youtube.com/watch?v=oLO7kLNJt7A
+--
+6
 """
 from itertools import groupby
+
 def main():
     N= int(input())
-    st = ""
-    for _ in range(N):
-        st+=(str(input()))
-    
-    print(f"st={st}")
 
+    #基本 Method
     def decode_runlength(ll:"List(())")->str:
         s = ""
         for c, num in ll:
             s+=c*int(num)
         return s
-
+    
+    #基本 Method
     def encode_runlength(s:str)->"List(tuple(str,int))":
         g = groupby(s) # iterator
-        A = []
+        ll = []
         for k,v in g:
-            A.append((k,len(list(v))))
-        return A
+            ll.append((k,len(list(v))))
+        return ll
     
-    print(encode_runlength(st))
-    
-    # Even または Oddで場合分け
-
+    # Even または Odd で場合分け
+    ll = []
+    for i in range(N):
+        if i==0:
+            ll.append((str(input()),1))
+            continue
+        
+        color = str(input())
+        atLast = ll[-1]
+        
+        if atLast[0] == color:
+            ll.remove(atLast)
+            ll.insert(len(ll),(atLast[0],atLast[1]+1))
+        else:
+            if i%2==1: # Odd
+                ll.append((color,1))
+            
+            if i%2==0: # Even
+                ll.remove(atLast)
+                ll.insert(len(ll),(atLast[0],atLast[1]+1))
+            else:
+                # 新規に置く碁石の色で塗り替える
+                ll.remove(atLast)
+                ll.insert(len(ll),(atLast[0],atLast[1]+1))
+    ans = 0 
+    for i in range(len(ll)):
+        if ll[i][0]==str(0):
+            ans+=ll[i][1]
+    print(f"ll={ll}")
+    print(ans)
 
 if __name__=="__main__":
     main()
