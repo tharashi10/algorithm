@@ -38,31 +38,34 @@ def main():
             ll.append((k,len(list(v))))
         return ll
     
-    # Even または Odd で場合分け
+    # Same Color または Different Color で場合分け
     ll = []
-    for i in range(N):
-        if i==0:
-            ll.append((str(input()),1))
-            continue
-        
+    ll.append((str(input()),1))
+    for i in range(N-1):
         color = str(input())
-        atLast = ll[-1]
+        atLast = ll[len(ll)-1]
 
         # Same Color
         if atLast[0] == color:
             ll.remove(atLast)
             ll.insert(len(ll),(color,atLast[1]+1))
 
+        # Different Color
         else:
-            # Different Color
-            if (i+1)%2==1: # Odd
-                ll.append((color,1))
-                
+            if i%2==1: # Odd
+                ll.append((color,1)) #奇数ならイロチでも塗り替えはしない
+              
             else:
                 # 新規に置く碁石の色で塗り替える
-                ll.remove(atLast)
-                ll.insert(len(ll),(color,atLast[1]+1))
-                #print(f"dif_color: {i+1} th ,ll:{ll},atLast:{atLast}")
+                if len(ll)==1:
+                    ll.remove(atLast)
+                    ll.insert(len(ll),(color,atLast[1]+1))
+                else:
+                    atSecondLast = ll[len(ll)-2]
+                    ll.remove(atLast)
+                    ll.remove(atSecondLast)
+                    ll.insert(len(ll),(color,atLast[1]+atSecondLast[1]+1))
+        #print(ll)
     ans = 0
     for i in range(len(ll)):
         if ll[i][0]==str(0):
