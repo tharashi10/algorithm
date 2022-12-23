@@ -133,7 +133,7 @@
 | 87 |UFind| Decayed Bridges | https://atcoder.jp/contests/abc120/tasks/abc120_d |
 | 88 |圧縮| Goishi | https://atcoder.jp/contests/joi2008ho/tasks/joi2008ho_a |
 | 89 |圧縮| 電飾  | https://atcoder.jp/contests/joi2013ho/tasks/joi2013ho1 |
-| 90 ||  | |
+| 90 |単純な幾何| Emblem | https://atcoder.jp/contests/s8pc-5/tasks/s8pc_5_b|
 | 91 ||  | |
 | 92 ||  | |
 | 93 ||  | |
