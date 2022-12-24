@@ -1,4 +1,6 @@
 """
+ArcTan(theta)
+計算合わず少し時間要した. OK
 2 2 4
 """
 import math
@@ -12,12 +14,12 @@ def main():
     """
     
     def theta(a,b,x):
-        half = b*(a**2)/2
-        if  half >= x:
-            y = 2*(b-x/(a**2))/2
+        half = b*(a*a)/2
+        if  x >= half:
+            y = (b-(x/(a**2)))*2/a
             return math.degrees(math.atan(y))
         else:
-            y = (a*(b**2))/2*x
+            y = ((a*b*b)/(2*x))
             return math.degrees(math.atan(y))
     print(theta(a,b,x))
 
