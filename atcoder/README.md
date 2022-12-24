@@ -135,15 +135,15 @@
 | 89 |圧縮| 電飾  | https://atcoder.jp/contests/joi2013ho/tasks/joi2013ho1 |
 | 90 |単純幾何| Emblem | https://atcoder.jp/contests/s8pc-5/tasks/s8pc_5_b|
 | 91 |単純幾何| WaterBottle | https://atcoder.jp/contests/abc144/tasks/abc144_d |
-| 92 ||  | |
-| 93 ||  | |
-| 94 ||  | |
-| 95 ||  | |
-| 96 ||  | |
-| 97 ||  | |
-| 98 ||  | |
-| 99 ||  | |
-| 100||  | |
+| 92 |実装| 連鎖消滅パズル |https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=1193&lang=jp |
+| 93 |実装|  | |
+| 94 |実装|  | |
+| 95 |数学|  | |
+| 96 |数学|  | |
+| 97 |数学|  | |
+| 98 |数学|  | |
+| 99 |数学|  | |
+| 100|数学|  | |
 
 ### Weekly Planning
 
