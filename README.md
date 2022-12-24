@@ -1,9 +1,4 @@
-### Algorithm Contents
-- AtCoder
-- AOJ
-- Reference
-
-### Zen
+# Zen
 
 ```py
 Python 3.10.8 (main, Oct 13 2022, 09:48:40) [Clang 14.0.0 (clang-1400.0.29.102)] on darwin
@@ -33,7 +28,12 @@ Namespaces are one honking great idea -- let's do more of those!
 >>>
 ```
 
-### My Comprehension
+<br/>
+
+# Algorithm Contents
+- AtCoder
+- AOJ
+## My Comprehension
 
 | ## |  Title     | Understanding | Inplementation |
 |----|------------|---------------|----------------|
@@ -57,8 +57,9 @@ Namespaces are one honking great idea -- let's do more of those!
 | 18 | Imos       | ◯ | ◯ |
 | 19 | Mathematics | | |
 
+<br/>
 
-### Reference
+## Reference
 
 | ## |  Title  | URL       | Note |
 |----|---------|-----------|------|
