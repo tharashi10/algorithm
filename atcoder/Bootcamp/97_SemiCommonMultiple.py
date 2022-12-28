@@ -1,4 +1,6 @@
 """
+ロジックあってる
+PythonだとREする
 2 50
 6 10
 """
@@ -11,20 +13,10 @@ def main():
     
     def lcm(nums):
         return functools.reduce(math.lcm,nums)
-    
+
     ll = list(map(lambda x: x//2, ll))
-    mi = lcm(ll)
-    ans = 0
-    
-    tmp = 0
-    while (tmp<M):
-
-    for k in range(1,n,2):
-        tmp = k*mi
-        if :
-            break
-        ans+=1
-
+    com = lcm(ll)
+    ans = (M//com+1)//2 # Mまでに最小公倍数が何個あるのかを算出(但し奇数を算出)
     print(ans)
 
 if __name__ == "__main__":
