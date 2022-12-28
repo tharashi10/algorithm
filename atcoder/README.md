@@ -141,7 +141,7 @@
 | 94 |実装|  | |
 | 95 |数学| Greedy | https://atcoder.jp/contests/abc149/tasks/abc149_b |
 | 96 |数学| ModSum | https://atcoder.jp/contests/abc139/tasks/abc139_d |
-| 97 |数学|  | |
+| 97 |数学| Semi Common Multiple | https://atcoder.jp/contests/abc150/tasks/abc150_d |
 | 98 |数学|  | |
 | 99 |数学|  | |
 | 100|数学|  | |
