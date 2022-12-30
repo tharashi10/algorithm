@@ -137,14 +137,14 @@
 | 90 |単純幾何| Emblem | https://atcoder.jp/contests/s8pc-5/tasks/s8pc_5_b|
 | 91 |単純幾何| WaterBottle | https://atcoder.jp/contests/abc144/tasks/abc144_d |
 | 92 |実装| 連鎖消滅パズル |https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=1193&lang=jp |
-| 93 |実装|  | |
-| 94 |実装|  | |
+| 93 |実装| 石落としゲーム | https://atcoder.jp/contests/s8pc-3/tasks/s8pc_3_b |
+| 94 |実装| CakeCut | https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=1149&lang=jp|
 | 95 |数学| Greedy | https://atcoder.jp/contests/abc149/tasks/abc149_b |
 | 96 |数学| ModSum | https://atcoder.jp/contests/abc139/tasks/abc139_d |
 | 97 |数学| Semi Common Multiple | https://atcoder.jp/contests/abc150/tasks/abc150_d |
-| 98 |数学|  | |
-| 99 |数学|  | |
-| 100|数学|  | |
+| 98 |数学| Colorful Hats | https://atcoder.jp/contests/sumitrust2019/tasks/sumitb2019_e |
+| 99 |数学| Digit Sum Replace |https://atcoder.jp/contests/ddcc2020-qual/tasks/ddcc2020_qual_d |
+| 100|数学| Crossing | https://atcoder.jp/contests/tenka1-2018-beginner/tasks/tenka1_2018_d |
 
 <br/>
 
@@ -162,7 +162,7 @@
 | 08   | 2022-11-28(Mon)~ | Dijkstra・Floyd–Warshall・Minimum Spanning Tree| OK |
 | 09   | 2022-12-05(Mon)~ | Inverse Element/ Cumulative Sum | OK |
 | 10   | 2022-12-12(Mon)~ | Union-Find | OK |
-| 11   | 2022-12-19(Mon)~ | Quantitative/Math Approach |  |
+| 11   | 2022-12-19(Mon)~ | Quantitative/Math Approach | OK |
 
 <br/>
 
