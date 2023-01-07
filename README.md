@@ -55,7 +55,7 @@ Namespaces are one honking great idea -- let's do more of those!
 | 16 | Inverse Elements| ◯ | ◯ |
 | 17 | Cumulative Sum | ◯ | ◯|
 | 18 | Imos       | ◯ | ◯ |
-| 19 | Mathematics | | |
+| 19 | Mathematics | ◯ | ◯ |
 
 <br/>
 
@@ -63,10 +63,10 @@ Namespaces are one honking great idea -- let's do more of those!
 
 | ## |  Title  | URL       | Note |
 |----|---------|-----------|------|
-| 01 | MIT     | https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/resources/mit6_006s20_prob8/ |Lecture about Algorithms|
+| 01 | MIT     | https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/resources/mit6_006s20_prob8/ |Lectures|
 | 02 | PyDoc   | https://docs.python.org/3/tutorial/index.html |Official Doc|
 | 03 | Atcoder | https://qiita.com/e869120/items/eb50fdaece12be418faa |100|
-| 04 | A book for AtCoder| https://www.amazon.co.jp/exec/obidos/ASIN/B00CY9256C/aaaaab0c-22/ref=nosim/| One of the popular coding books |
+| 04 | A book for AtCoder| https://www.amazon.co.jp/exec/obidos/ASIN/B00CY9256C/aaaaab0c-22/ref=nosim/| a 'Pro-con' book |
 | 05 | Grammar　| https://learning.oreilly.com/library/view/introducing-python-2nd/9781492051374/ | From Oreilly |
 | 06 | Pythonista| https://learning.oreilly.com/library/view/fluent-python-2nd/9781492056348/ | From Oreilly |
 | 07 | C++ Jupyter| https://blog.jupyter.org/interactive-workflows-for-c-with-jupyter-fe9b54227d92 | Jupyter Env for C++ |
